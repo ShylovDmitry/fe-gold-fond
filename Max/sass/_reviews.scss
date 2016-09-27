@@ -1,0 +1,30 @@
+section.reviews {
+  margin-bottom: 100px;
+  .carousel-indicators {
+    bottom: -50px;
+    li {
+      border-color: #fe862d;
+      background: #fe862d;
+      &.active {
+        background: transparent;
+      }
+    }
+  }
+  .carousel-control {
+    width: 30px;
+    background: none;
+    span {
+      margin: -16px;
+    }
+  }
+  .item {
+    .row {
+      margin: 30px 0;
+      p {
+        display: table-cell;
+        height: 170px;
+        vertical-align: middle;
+      }
+    }
+  }
+}

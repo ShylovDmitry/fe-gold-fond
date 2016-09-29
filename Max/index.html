@@ -21,7 +21,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 logo">
-                    <img src="img/logo.png" alt="Золотой фонд">
+                    <a href="index.html"><img src="img/logo.png" alt="Золотой фонд"></a>
                 </div>
                 <div class="col-md-3 text-center tagline">
                     Займы прямо на месте!
@@ -43,7 +43,7 @@
                 <a href="#">
                     <li>Получить займ</li>
                 </a>
-                <a href="#">
+                <a href="loan_repayment.html">
                     <li>Погашение займов</li>
                 </a>
                 <a href="#">
@@ -53,7 +53,7 @@
                     <li>Блог</li>
                 </a>
                 <a href="#">
-                    <li>Заявка на займ</li>
+                    <li>Заявка на заем</li>
                 </a>
             </ul>
         </div>
@@ -69,7 +69,7 @@
                 <li>Выдается на месте при предъявлении паспор<br>и справки о з/п (2 НДФЛ)</li>
                 <li><b>0,55% в день</b>. Ниже, чем у МФО!</li>
             </ul>
-            <button>Оформить заявку</button>
+            <button data-toggle="modal" data-target="#make_request">Оформить заявку</button>
         </div>
     </section>
 
@@ -121,7 +121,26 @@
                 <img src="img/calc.png" alt="Калькулятор">
             </div>
             <div class="calc">
-                <h3>Онлайн калькулятор</h3>
+                <h2>Онлайн калькулятор</h2>
+                <div class="row">
+                    <div class="col-md-8">
+                        <h4>Сумма займа</h4>
+                        <p>1 000 руб<i>30 000 руб</i></p>
+                        <input id="sum" step="1000" min="0" max="30000" type="range">
+                        <h4>Срок займа</h4>
+                        <p>1 день<i>30 дней</i></p>
+                        <input id="day" step="1" min="0" max="30" type="range">
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Сумма займа</h5>
+                        <p id="result_sum">23 000</p>
+                        <h5>Сумма пепеплаты 0,55%</h5>
+                        <p id="result_overpayment">4 000</p>
+                        <h5>Необходимо вернуть</h5>
+                        <p id="result_return">27 000</p>
+                        <button type="submit">Подать заявку</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -313,13 +332,6 @@
                     <span class="glyphicon glyphicon-chevron-right"></span>
                 </a>
             </div>
-
-
-
-
-
-
-
         </div>
     </section>
 
@@ -333,9 +345,9 @@
             <div class="row">
                 <div class="col-md-5 col-md-offset-1">
                     <form action="#" class="text-center">
-                        <input type="text" placeholder="Ваше имя">
-                        <input type="tel" placeholder="Ваш номер телефона">
-                        <input type="number" min="0" max="30000" step="100"
+                        <input required type="text" placeholder="Ваше имя">
+                        <input required type="tel" placeholder="Ваш номер телефона">
+                        <input type="number" min="0" max="30000" step="1000"
                                placeholder="Желаемая сумма (до 30 т.р.)">
                         <button type="submit">Подать заявку</button>
                     </form>
@@ -361,7 +373,7 @@
                     <ul class="list-inline">
                         <li><a href="#">Экспрес-займы</a></li>
                         <li><a href="#">Получить займ</a></li>
-                        <li><a href="#">Погашение займов</a></li>
+                        <li><a href="loan_repayment.html">Погашение займов</a></li>
                         <li><a href="#">О компании</a></li>
                         <li><a href="#">Блог</a></li>
                         <li><a href="#">Заявка на займ</a></li>
@@ -396,6 +408,25 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal fade text-center" id="make_request" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>Подать заявку на получение займа</h3>
+                <p>Просто оставьте свой номер телефона и мы перезвоним Вам в течении рабочего дня.<br>
+                    Наш менеджер поможет Вам без проблем пройти всю процедуру оформления займа в нашей компании.</p>
+                <form action="#">
+                    <input required type="text" placeholder="Ваше имя *">
+                    <input required type="tel" placeholder="Телефон для связи *">
+                    <textarea placeholder="Комментарий"></textarea>
+                    <button type="submit">Оптравить</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

@@ -1,0 +1,28 @@
+.calc_right {
+  @extend .calc;
+  margin-left: 0;
+  width: 380px;
+  padding: 0 25px 25px 25px;
+  h2 {padding: 15px;}
+  b {
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  table {
+    width: 100%;
+    margin-bottom: 40px;
+    th {
+      vertical-align: bottom;
+      padding-right: 12px;
+    }
+  }
+  #result_overpayment {
+    margin: 0;
+    font-size: 28px;
+  }
+  #result_return {
+    margin: 0;
+    font-size: 28px;
+    color: $green;
+  }
+}

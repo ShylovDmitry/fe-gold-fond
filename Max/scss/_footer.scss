@@ -10,5 +10,9 @@ footer {
   .glyphicon-menu-up {
     font-size: 30px;
     color: #ffa710;
+    &:hover {
+      color: #ffc76b;
+    }
   }
 }
+

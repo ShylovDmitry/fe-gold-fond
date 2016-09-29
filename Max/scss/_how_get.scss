@@ -1,4 +1,8 @@
 section.how_get {
+  header h2 {
+    color: $main-color;
+    font-family: Roboto;
+  }
   img {
     height: 150px;
     margin-bottom: 20px;
@@ -9,6 +13,7 @@ section.how_get {
     font-size: 12px;
   }
   h4 {
+    color: #000;
     font-weight: bold;
     line-height: 26px;
     font-size: 20px;

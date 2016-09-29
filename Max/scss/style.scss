@@ -1,12 +1,16 @@
 @import "for_all";
 @import "header";
-@import "top_nav";
+@import "nav";
+@import "application";
+@import "footer";
+@import "modal";
+
 @import "express_loans";
 @import "how_get";
 @import "calculation";
 @import "info";
 @import "advantage";
 @import "reviews";
-@import "application";
-@import "bottom_nav";
-@import "footer";
+
+@import "calc_right";
+@import "loan_repayment";

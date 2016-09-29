@@ -1,0 +1,40 @@
+.loan_repayment {
+  margin-bottom: 80px;
+  .row {margin-top: 20px;}
+  .col-md-4 {margin-left: 70px;}
+  h1 {
+    text-align: left;
+    font-size: 55px;
+  }
+  h2 {text-align: left;}
+  p {margin-top: 25px;}
+  em {
+    background: url("../img/icon-ok.png");
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+  };
+  .exact_sum {
+    background: url("../img/exact_sum.jpg") top right no-repeat $green;
+    height: 254px;
+    padding: 25px 250px 0 50px;
+    margin-top: 70px;
+    color: #fff;
+    h2 {margin: 0;}
+    p {color: #fff}
+  }
+  .advantage {
+    width: 380px;
+    border: 1px solid #ddd;
+    margin-top: 30px;
+    padding: 25px;
+    h3 {padding: 0 0 20px 10px;}
+    li {
+      list-style-image: url("../img/icon-ok.png");
+      padding-top: 15px;
+      font-size: 14px;
+    }
+  }
+}
+

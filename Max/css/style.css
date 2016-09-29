@@ -1,6 +1,6 @@
 body, h1, h2, h3, h4, h5, a, span, div, p {
   font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: #30455b !important; }
+  color: #30455b; }
 
 body, a, span, i, em, div, p {
   font-size: 16px; }
@@ -10,25 +10,24 @@ button {
   color: #fff !important;
   font-weight: bold !important;
   border: 2px solid #feae24;
-  background: -webkit-linear-gradient(top, #fdbf4e 0%, #ffa60f 100%);
   background: linear-gradient(to bottom, #fdbf4e 0%, #ffa60f 100%);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
   border-radius: 3px;
   padding: 10px 30px;
   box-shadow: 0 3px #fe862d; }
   button:hover {
-    background: -webkit-linear-gradient(top, #fec35a 0%, #ffae1e 100%);
     background: linear-gradient(to bottom, #fec35a 0%, #ffae1e 100%); }
-  button:focus {
-    background: -webkit-linear-gradient(top, #fec35a 0%, #ffae1e 100%);
+  button:active {
     background: linear-gradient(to bottom, #fec35a 0%, #ffae1e 100%);
     box-shadow: 0 1px #fe862d;
-    margin-top: 2px;
+    margin: 2px 0 -2px 0;
     outline: none; }
 
 section header {
   text-align: center; }
   section header h2 {
-    color: #000 !important;
+    font-weight: 300 !important;
     margin-top: 100px;
     font-size: 40px;
     margin-bottom: 20px; }
@@ -73,6 +72,151 @@ nav.top_nav {
       background: #445c76; }
     nav.top_nav a:focus {
       text-decoration: none; }
+    nav.top_nav a.top_active {
+      background: #f2a310;
+      pointer-events: none;
+      cursor: default; }
+
+.dop_nav {
+  margin-top: 20px;
+  opacity: .5; }
+  .dop_nav a {
+    color: #30455b;
+    text-decoration: underline;
+    background: url("../img/home-icon.png") 0 2px no-repeat;
+    padding-left: 20px; }
+    .dop_nav a:hover {
+      color: #30455b; }
+
+nav.bottom_nav {
+  margin: 35px 0;
+  text-transform: uppercase; }
+  nav.bottom_nav a {
+    text-decoration: underline;
+    color: #30455b; }
+    nav.bottom_nav a:hover {
+      color: #445c76; }
+  nav.bottom_nav .icon-social i {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background: url("../img/social-icon.png") no-repeat; }
+    nav.bottom_nav .icon-social i.icon-twitter {
+      background-position: 0 0; }
+    nav.bottom_nav .icon-social i.icon-google-plus {
+      background-position: -26px 0; }
+    nav.bottom_nav .icon-social i.icon-fb {
+      background-position: -51px 0; }
+    nav.bottom_nav .icon-social i.icon-vk {
+      background-position: -77px 0; }
+
+section.application {
+  background: #30455b; }
+  section.application header h2 {
+    margin: 50px;
+    color: #fe862d !important; }
+  section.application header p {
+    color: #fff !important; }
+    section.application header p i {
+      font-style: normal;
+      color: #00b44f; }
+  section.application form {
+    display: block;
+    border-right: 1px solid #7f92a5;
+    margin-bottom: 50px;
+    position: relative; }
+    section.application form:before, section.application form:after {
+      content: '';
+      position: absolute;
+      right: -40px;
+      top: 120px;
+      border: 20px solid transparent;
+      border-left: 20px solid #7f92a5; }
+    section.application form:after {
+      right: -39px;
+      top: 120px;
+      border-left: 20px solid #30455b; }
+    section.application form input, section.application .modal form textarea, .modal section.application form textarea {
+      width: 300px;
+      height: 50px;
+      margin-bottom: 25px;
+      padding-left: 20px;
+      border: 1px solid #fff;
+      background: linear-gradient(to bottom, #ecedee 0%, #f5f5f5 50%, #ecedee 100%); }
+  section.application .col-md-5 div {
+    margin-top: 30px;
+    color: #fff !important; }
+    section.application .col-md-5 div i {
+      font-style: normal;
+      font-size: 20px; }
+    section.application .col-md-5 div ol {
+      margin-top: 20px;
+      padding-left: 0; }
+      section.application .col-md-5 div ol li {
+        list-style-type: none;
+        counter-increment: item;
+        line-height: 45px; }
+      section.application .col-md-5 div ol li:before {
+        content: counter(item);
+        background: #59697c;
+        margin-right: 10px;
+        padding: 5px 10px;
+        border-radius: 50%; }
+
+footer {
+  background: #f5f5f5;
+  border-top: 1px solid #ccc; }
+  footer .footer_infa {
+    margin: 20px 0; }
+  footer p {
+    font-size: 10px; }
+  footer .glyphicon-menu-up {
+    font-size: 30px;
+    color: #ffa710; }
+    footer .glyphicon-menu-up:hover {
+      color: #ffc76b; }
+
+.modal .modal-content {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  width: 500px;
+  margin: auto;
+  background: #30455b; }
+.modal .close {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  margin-right: 4px;
+  opacity: .5; }
+  .modal .close:hover {
+    opacity: .8; }
+.modal h3 {
+  text-transform: uppercase;
+  color: #fff; }
+.modal p {
+  margin: 0 30px;
+  font-size: 12px;
+  margin-bottom: 25px;
+  color: #fff; }
+.modal form {
+  display: block;
+  margin-bottom: 50px;
+  position: relative; }
+  .modal form input, .modal form textarea {
+    clear: both;
+    width: 400px;
+    height: 50px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    border: 1px solid #fff;
+    background: linear-gradient(to bottom, #ecedee 0%, #f5f5f5 50%, #ecedee 100%); }
+  .modal form textarea {
+    height: 100px;
+    resize: none; }
+    .modal form textarea[placeholder] {
+      padding-top: 10px; }
 
 section.express_loans {
   height: 550px;
@@ -91,6 +235,9 @@ section.express_loans {
         font-size: 18px;
         padding-top: 15px; }
 
+section.how_get header h2 {
+  color: #30455b;
+  font-family: Roboto; }
 section.how_get img {
   height: 150px;
   margin-bottom: 20px; }
@@ -99,6 +246,7 @@ section.how_get span {
   font-weight: bold;
   font-size: 12px; }
 section.how_get h4 {
+  color: #000;
   font-weight: bold;
   line-height: 26px;
   font-size: 20px; }
@@ -112,9 +260,46 @@ section.calculation {
     margin-bottom: -52px; }
     section.calculation .img_calc img {
       height: 100px; }
-  section.calculation .calc {
-    height: 100px;
-    box-shadow: 0 0 5px #444; }
+
+.calc, .calc_right {
+  width: 930px;
+  margin: auto;
+  box-shadow: 0 0 5px #aaaaaa; }
+  .calc .row, .calc_right .row {
+    padding-bottom: 100px; }
+  .calc h2, .calc_right h2 {
+    padding: 70px 0 0 55px;
+    font-weight: bold; }
+  .calc h4, .calc_right h4 {
+    font-weight: bold;
+    margin-bottom: 20px; }
+  .calc i, .calc_right i {
+    float: right;
+    font-style: normal; }
+  .calc input[type="range"], .calc_right input[type="range"], .calc .modal form textarea[type="range"], .modal form .calc textarea[type="range"], .calc_right .modal form textarea[type="range"], .modal form .calc_right textarea[type="range"] {
+    margin-bottom: 70px; }
+    .calc input[type="range"]:last-child, .calc_right input[type="range"]:last-child, .calc .modal form textarea[type="range"]:last-child, .modal form .calc textarea[type="range"]:last-child, .calc_right .modal form textarea[type="range"]:last-child, .modal form .calc_right textarea[type="range"]:last-child {
+      margin: 0; }
+  .calc .col-md-8, .calc_right .col-md-8 {
+    border-right: 1px solid #7f92a5;
+    padding: 0 70px; }
+    .calc .col-md-8:before, .calc_right .col-md-8:before, .calc .col-md-8:after, .calc_right .col-md-8:after {
+      content: '';
+      position: absolute;
+      right: -40px;
+      top: 40px;
+      border: 20px solid transparent;
+      border-left: 20px solid #7f92a5; }
+    .calc .col-md-8:after, .calc_right .col-md-8:after {
+      right: -39px;
+      top: 40px;
+      border-left: 20px solid #fff; }
+  .calc .col-md-4, .calc_right .col-md-4 {
+    padding: 0 55px; }
+    .calc .col-md-4 h5, .calc_right .col-md-4 h5 {
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 20px; }
 
 section.info {
   margin-top: 100px;
@@ -177,88 +362,68 @@ section.reviews {
       height: 170px;
       vertical-align: middle; }
 
-section.application {
-  background: #30455b; }
-  section.application header h2 {
-    margin: 50px;
-    color: #fe862d !important; }
-  section.application header p {
-    color: #fff !important; }
-    section.application header p i {
-      font-style: normal;
-      color: #00b44f; }
-  section.application form {
-    display: block;
-    border-right: 1px solid #7f92a5;
-    margin-bottom: 50px;
-    position: relative; }
-    section.application form:before, section.application form:after {
-      content: '';
-      position: absolute;
-      right: -40px;
-      top: 120px;
-      border: 20px solid transparent;
-      border-left: 20px solid #7f92a5; }
-    section.application form:after {
-      right: -39px;
-      top: 120px;
-      border-left: 20px solid #30455b; }
-    section.application form input {
-      width: 300px;
-      height: 50px;
-      margin-bottom: 25px;
-      padding-left: 20px;
-      border: 1px solid #fff;
-      background: -webkit-linear-gradient(top, #ecedee 0%, #f5f5f5 50%, #ecedee 100%);
-      background: linear-gradient(to bottom, #ecedee 0%, #f5f5f5 50%, #ecedee 100%); }
-  section.application .col-md-5 div {
-    margin-top: 30px;
-    color: #fff !important; }
-    section.application .col-md-5 div i {
-      font-style: normal;
-      font-size: 20px; }
-    section.application .col-md-5 div ol {
-      margin-top: 20px;
-      padding-left: 0; }
-      section.application .col-md-5 div ol li {
-        list-style-type: none;
-        counter-increment: item;
-        line-height: 45px; }
-      section.application .col-md-5 div ol li:before {
-        content: counter(item);
-        background: #59697c;
-        margin-right: 10px;
-        padding: 5px 10px;
-        border-radius: 50%; }
+.calc_right {
+  margin-left: 0;
+  width: 380px;
+  padding: 0 25px 25px 25px; }
+  .calc_right h2 {
+    padding: 15px; }
+  .calc_right b {
+    font-size: 13px;
+    text-transform: uppercase; }
+  .calc_right table {
+    width: 100%;
+    margin-bottom: 40px; }
+    .calc_right table th {
+      vertical-align: bottom;
+      padding-right: 12px; }
+  .calc_right #result_overpayment {
+    margin: 0;
+    font-size: 28px; }
+  .calc_right #result_return {
+    margin: 0;
+    font-size: 28px;
+    color: #00b44f; }
 
-nav.bottom_nav {
-  margin: 35px 0;
-  text-transform: uppercase; }
-  nav.bottom_nav a {
-    text-decoration: underline !important; }
-  nav.bottom_nav .icon-social i {
+.loan_repayment {
+  margin-bottom: 80px; }
+  .loan_repayment .row {
+    margin-top: 20px; }
+  .loan_repayment .col-md-4 {
+    margin-left: 70px; }
+  .loan_repayment h1 {
+    text-align: left;
+    font-size: 55px; }
+  .loan_repayment h2 {
+    text-align: left; }
+  .loan_repayment p {
+    margin-top: 25px; }
+  .loan_repayment em {
+    background: url("../img/icon-ok.png");
+    width: 20px;
+    height: 20px;
     display: inline-block;
-    height: 25px;
-    width: 25px;
-    background: url("../img/social-icon.png") no-repeat; }
-    nav.bottom_nav .icon-social i.icon-twitter {
-      background-position: 0 0; }
-    nav.bottom_nav .icon-social i.icon-google-plus {
-      background-position: -26px 0; }
-    nav.bottom_nav .icon-social i.icon-fb {
-      background-position: -51px 0; }
-    nav.bottom_nav .icon-social i.icon-vk {
-      background-position: -77px 0; }
-
-footer {
-  background: #f5f5f5;
-  border-top: 1px solid #ccc; }
-  footer .footer_infa {
-    margin: 20px 0; }
-  footer p {
-    font-size: 10px; }
-  footer .glyphicon-menu-up {
-    font-size: 30px;
-    color: #ffa710; }
+    margin-right: 10px; }
+  .loan_repayment .exact_sum {
+    background: url("../img/exact_sum.jpg") top right no-repeat #00b44f;
+    height: 254px;
+    padding: 25px 250px 0 50px;
+    margin-top: 70px;
+    color: #fff; }
+    .loan_repayment .exact_sum h2 {
+      margin: 0; }
+    .loan_repayment .exact_sum p {
+      color: #fff; }
+  .loan_repayment .advantage {
+    width: 380px;
+    border: 1px solid #ddd;
+    margin-top: 30px;
+    padding: 25px; }
+    .loan_repayment .advantage h3 {
+      padding: 0 0 20px 10px; }
+    .loan_repayment .advantage li {
+      list-style-image: url("../img/icon-ok.png");
+      padding-top: 15px;
+      font-size: 14px; }
 
 /*# sourceMappingURL=style.css.map */

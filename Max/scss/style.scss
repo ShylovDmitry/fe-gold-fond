@@ -1,7 +1,7 @@
 @import "for_all";
 @import "header";
-@import "nav";
-@import "application";
+@import "navs";
+@import "apply_loan";
 @import "footer";
 @import "modal";
 
@@ -14,3 +14,7 @@
 
 @import "calc_right";
 @import "loan_repayment";
+
+@import "application";
+
+@import "calc_slider";

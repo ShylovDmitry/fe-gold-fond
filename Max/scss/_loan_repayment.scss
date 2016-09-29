@@ -1,6 +1,6 @@
 .loan_repayment {
-  margin-bottom: 80px;
-  .row {margin-top: 20px;}
+  margin: 20px 0 80px 0;
+  .row {margin-top: 0;}
   .col-md-4 {margin-left: 70px;}
   h1 {
     text-align: left;
@@ -14,7 +14,7 @@
     height: 20px;
     display: inline-block;
     margin-right: 10px;
-  };
+  }
   .exact_sum {
     background: url("../img/exact_sum.jpg") top right no-repeat $green;
     height: 254px;

@@ -9,6 +9,11 @@ nav.top_nav {
     padding: 14px 43px;
     border-right: 1px solid #7f92a5;
     margin-right: -4px;
+    &.top_active {
+      background: $orange;
+      pointer-events: none;
+      cursor: default;
+    }
     &:last-child {
       border-right: none;
       background: $green;
@@ -21,11 +26,6 @@ nav.top_nav {
       background: #445c76;
     }
     &:focus {text-decoration: none}
-    &.top_active {
-      background: $orange;
-      pointer-events: none;
-      cursor: default;
-    }
   }
 }
 

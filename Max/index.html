@@ -17,7 +17,7 @@
 </head>
 <body>
 
-    <header id="header">
+    <header>
         <div class="container">
             <div class="row">
                 <div class="col-md-3 logo">
@@ -52,7 +52,7 @@
                 <a href="#">
                     <li>Блог</li>
                 </a>
-                <a href="#">
+                <a href="application.html">
                     <li>Заявка на заем</li>
                 </a>
             </ul>
@@ -125,19 +125,22 @@
                 <div class="row">
                     <div class="col-md-8">
                         <h4>Сумма займа</h4>
-                        <p>1 000 руб<i>30 000 руб</i></p>
-                        <input id="sum" step="1000" min="0" max="30000" type="range">
+                        <p>1 000 руб.<i>30 000 руб.</i></p>
+                        <div id="sum"></div>
+                        <p id="show_sum">15000 руб.</p>
+
                         <h4>Срок займа</h4>
                         <p>1 день<i>30 дней</i></p>
-                        <input id="day" step="1" min="0" max="30" type="range">
+                        <div id="day"></div>
+                        <p id="show_day">7 дн.</p>
                     </div>
                     <div class="col-md-4">
                         <h5>Сумма займа</h5>
-                        <p id="result_sum">23 000</p>
+                        <p id="result_sum">15000 руб.</p>
                         <h5>Сумма пепеплаты 0,55%</h5>
-                        <p id="result_overpayment">4 000</p>
+                        <p id="result_overpayment">578 руб.</p>
                         <h5>Необходимо вернуть</h5>
-                        <p id="result_return">27 000</p>
+                        <p id="result_return">15578 руб.</p>
                         <button type="submit">Подать заявку</button>
                     </div>
                 </div>
@@ -335,7 +338,7 @@
         </div>
     </section>
 
-    <section class="application">
+    <section class="apply_loan">
         <div class="container">
             <header>
                 <h2>Оформить заявку на заем</h2>
@@ -376,7 +379,7 @@
                         <li><a href="loan_repayment.html">Погашение займов</a></li>
                         <li><a href="#">О компании</a></li>
                         <li><a href="#">Блог</a></li>
-                        <li><a href="#">Заявка на займ</a></li>
+                        <li><a href="application.html">Заявка на займ</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2 text-center">
@@ -395,7 +398,7 @@
         <div class="container">
             <div class="row footer_infa">
                 <div class="col-md-4 text-center">© 2015 КПК СЦ "Золотой Фонд"</div>
-                <div class="col-md-4 text-center"><a href="#header"><i class="glyphicon glyphicon-menu-up"></i></a></div>
+                <div class="col-md-4 text-center"><a href="#"><i class="glyphicon glyphicon-menu-up"></i></a></div>
                 <div class="col-md-4 text-center">Разработка: <a href="">MaxShylov</a></div>
             </div>
             <div class="row" >
@@ -428,8 +431,11 @@
         </div>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+    <script src="js/calc_slider.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </body>
 </html>

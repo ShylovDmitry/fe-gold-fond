@@ -26,15 +26,21 @@ section.calculation {
     float: right;
     font-style: normal;
   }
-  input[type="range"] {
-    margin-bottom: 70px;
-    &:last-child {
-      margin: 0;
-    }
+  #show_day {
+    width: 70px;
+    margin: 20px auto 0;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+  #show_sum{
+    @extend #show_day;
+    width: 120px;
+    margin-bottom: 80px;
   }
   .col-md-8 {
     border-right: 1px solid #7f92a5;
-    padding: 0 70px;
+    padding: 0 70px 40px;
     &:before, &:after {
       content: '';
       position: absolute;
@@ -52,7 +58,15 @@ section.calculation {
     h5 {
       font-weight: bold;
       text-transform: uppercase;
-      margin-bottom: 20px;
+      margin: 0;
     }
+    p {margin-bottom: 35px;}
+  }
+  #result_sum {
+    font-size: 32px;
+    color: $green;
+  }
+  #result_overpayment, #result_return {
+    font-size: 28px;
   }
 }

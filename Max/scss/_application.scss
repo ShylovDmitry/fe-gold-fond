@@ -1,65 +1,38 @@
 section.application {
-  background: $main-color;
-  header {
-    h2 {
-      margin: 50px;
-      color: #fe862d !important;
-    }
-    p {
-      color: #fff!important;
-      i {
-        font-style: normal;
-        color: $green;
-      }
-    }
+  margin-top: 20px;
+  h1 {
+    text-align: left;
+    font-size: 55px;
   }
+  .col-md-6 div{
+    background: url("../img/icon-info.png") top left no-repeat;
+    padding-left: 35px;
+    margin-top: 40px;
+  }
+  h3,h5 {font-weight: bold;}
   form {
     display: block;
-    border-right: 1px solid #7f92a5;
     margin-bottom: 50px;
-    position: relative;;
-    &:before, &:after {
-      content: '';
-      position: absolute;
-      right: -40px; top: 120px;
-      border: 20px solid transparent;
-      border-left: 20px solid #7f92a5;
-    }
-    &:after {
-      right: -39px; top: 120px;
-      border-left: 20px solid $main-color;
-    }
+    position: relative;
     input {
-      width: 300px;
+      width: 400px;
       height: 50px;
-      margin-bottom: 25px;
+      margin: 0 auto 25px;
       padding-left: 20px;
-      border: 1px solid #fff;
-      background: linear-gradient(to bottom, #ecedee 0%, #f5f5f5 50%, #ecedee 100%);
+      border: 1px solid #cccccc;
+    }
+    textarea {
+      @extend input;
+      height: 100px;
+      resize: none;
+      &[placeholder] {
+        padding-top: 10px;
+      }
     }
   }
-  .col-md-5 div {
+  footer {
     margin-top: 30px;
-    color: #fff !important;
-    i {
-      font-style: normal;
-      font-size: 20px;
-    }
-    ol {
-      margin-top: 20px;
-      padding-left: 0;
-      li {
-        list-style-type: none;
-        counter-increment: item;
-        line-height: 45px;
-      }
-      li:before {
-        content: counter(item);
-        background: #59697c;
-        margin-right: 10px;
-        padding: 5px 10px;
-        border-radius: 50%;
-      }
-    }
+    height: 70px;
+    background: $main-color;
   }
 }

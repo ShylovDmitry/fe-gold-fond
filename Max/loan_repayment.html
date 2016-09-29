@@ -17,7 +17,7 @@
 </head>
 <body>
 
-    <header id="header">
+    <header>
         <div class="container">
             <div class="row">
                 <div class="col-md-3 logo">
@@ -43,7 +43,7 @@
                 <a href="#">
                     <li>Получить займ</li>
                 </a>
-                <a href="#" class="top_active">
+                <a href="loan_repayment.html" class="top_active">
                     <li>Погашение займов</li>
                 </a>
                 <a href="#">
@@ -52,7 +52,7 @@
                 <a href="#">
                     <li>Блог</li>
                 </a>
-                <a href="#">
+                <a href="application.html">
                     <li>Заявка на заем</li>
                 </a>
             </ul>
@@ -129,18 +129,22 @@
 
                         <h4>Сумма займа</h4>
                         <p>1 000 руб<i>30 000 руб</i></p>
-                        <input id="sum" step="1000" min="0" max="30000" type="range">
+                        <div id="sum"></div>
+                        <p id="show_sum">15000 руб.</p>
+
                         <h4>Срок займа</h4>
-                        <p>1 день<i>30   дней</i></p>
-                        <input id="day" step="1000" min="0" max="30000" type="range">
+                        <p>1 день<i>30 дней</i></p>
+                        <div id="day"></div>
+                        <p id="show_day">7 дн.</p>
+
                         <table>
                             <tr>
                                 <th><b>Сумма пепеплаты 0,55%:</b></th>
-                                <td><p id="result_overpayment">4 000 руб.</p></td>
+                                <td><p id="result_overpayment">578 руб.</p></td>
                             </tr>
                             <tr>
                                 <th><b>Необходимо вернуть:</b></th>
-                                <td><p id="result_return">27 000 руб.</p></td>
+                                <td><p id="result_return">15578 руб.</p></td>
                             </tr>
                         </table>
                         <button type="submit">Подать заявку</button>
@@ -161,7 +165,7 @@
         </div>
     </section>
 
-    <section class="application">
+    <section class="apply_loan">
         <div class="container">
             <header>
                 <h2>Оформить заявку на заем</h2>
@@ -202,7 +206,7 @@
                         <li><a href="loan_repayment.html">Погашение займов</a></li>
                         <li><a href="#">О компании</a></li>
                         <li><a href="#">Блог</a></li>
-                        <li><a href="#">Заявка на займ</a></li>
+                        <li><a href="application.html">Заявка на займ</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2 text-center">
@@ -255,7 +259,11 @@
     </div>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/calc_slider.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </body>
 </html>

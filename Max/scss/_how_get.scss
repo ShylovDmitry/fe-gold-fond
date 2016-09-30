@@ -1,13 +1,9 @@
 section.how_get {
-  header h2 {
-    color: $main-color;
-    font-family: Roboto;
-  }
   img {
     height: 150px;
-    margin-bottom: 20px;
+    margin: 50px 0 20px;
   }
-  span {
+  .col-sm-6 div {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 12px;

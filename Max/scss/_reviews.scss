@@ -2,12 +2,17 @@ section.reviews {
   margin-bottom: 100px;
   .carousel-indicators {
     bottom: -50px;
-    li {
-      border-color: #fe862d;
-      background: #fe862d;
-      &.active {
-        background: transparent;
-      }
+  }
+  li {
+    border: none;
+    background: none;
+    text-indent: 0;
+    counter-increment: item;
+    &:before {
+       content: counter(item);
+    }
+    &.active {
+      font-size: 24px;
     }
   }
   .carousel-control {
@@ -24,6 +29,10 @@ section.reviews {
         display: table-cell;
         height: 170px;
         vertical-align: middle;
+      }
+      .clearfix {
+        padding-bottom: 30px;
+        display: block;
       }
     }
   }

@@ -1,7 +1,7 @@
 .ui-slider {
   position: relative;
   text-align: left;
-  .ui-slider-handle { /* Ползунок */
+  .ui-slider-handle {
     position: absolute;
     z-index: 5;
     width: 30px;
@@ -17,7 +17,7 @@
       outline: none;
     }
   }
-  .ui-slider-range { /* заливка */
+  .ui-slider-range {
     position: absolute;
     z-index: 1;
     top: 0;
@@ -25,7 +25,7 @@
     background: $green;
   }
 }
-.ui-widget-content { /* полоска */
+.ui-widget-content {
   border: 1px solid #dddddd;
   background: #ffffff;
   border-radius: 10px;

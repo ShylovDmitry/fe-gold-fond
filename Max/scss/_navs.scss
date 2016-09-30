@@ -3,9 +3,17 @@ nav.top_nav {
   ul {
     margin-bottom: 0;
   }
+  li {padding: 0;}
+  li:last-child a{
+    border-right: none;
+    background: $green;
+    &:hover {
+      background: #02c758;
+    }
+  }
   a {
     display: inline-block;
-    color: #fff!important;
+    color: #fff;
     padding: 14px 43px;
     border-right: 1px solid #7f92a5;
     margin-right: -4px;
@@ -13,13 +21,6 @@ nav.top_nav {
       background: $orange;
       pointer-events: none;
       cursor: default;
-    }
-    &:last-child {
-      border-right: none;
-      background: $green;
-      &:hover {
-        background: #02c758;
-      }
     }
     &:hover {
       text-decoration: none;

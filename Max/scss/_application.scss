@@ -4,10 +4,13 @@ section.application {
     text-align: left;
     font-size: 55px;
   }
-  .col-sm-6 div{
-    background: url("../img/icon-info.png") top left no-repeat;
-    padding-left: 35px;
-    margin-top: 40px;
+  .col-sm-6 {
+    margin-top: 80px;
+    div {
+      background: url("../img/icon-info.png") top left no-repeat;
+      padding-left: 35px;
+      margin-top: 40px;
+    }
   }
   h3,h5 {font-weight: bold;}
   form {

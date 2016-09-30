@@ -6,9 +6,9 @@ body, a, span, i, em, div, p {
   font-size: 16px; }
 
 button {
-  text-transform: uppercase !important;
-  color: #fff !important;
-  font-weight: bold !important;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
   border: 2px solid #feae24;
   background: linear-gradient(to bottom, #fdbf4e 0%, #ffa60f 100%);
   -webkit-border-radius: 3px;
@@ -24,7 +24,7 @@ button {
     margin: 2px 0 -2px 0;
     outline: none; }
 
-section .col-sm-12 h2 {
+section h2 {
   text-align: center;
   font-weight: 300;
   margin-top: 100px;
@@ -184,15 +184,17 @@ footer {
   width: 500px;
   margin: auto;
   background: #30455b; }
-.modal .close {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  text-shadow: none;
-  margin-right: 4px;
-  opacity: .5; }
-  .modal .close:hover {
-    opacity: .8; }
+  .modal .modal-content .close {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
+    color: #fff;
+    margin-right: 4px;
+    opacity: .5; }
+    .modal .modal-content .close:hover {
+      opacity: .8;
+      background: none; }
 .modal h3 {
   text-transform: uppercase;
   color: #fff; }
@@ -252,9 +254,8 @@ section.how_get p {
 
 .calc, .calc_right {
   width: 930px;
-  margin: auto;
+  margin: 120px auto 0;
   box-shadow: 0 0 5px #aaaaaa;
-  margin-top: 120px;
   position: relative; }
   .calc .row, .calc_right .row {
     padding-bottom: 100px; }
@@ -383,14 +384,18 @@ section.reviews {
       display: block; }
 
 .calc_right {
-  margin-left: 0;
+  margin: 0;
   width: 380px;
   padding: 0 25px 25px 25px; }
   .calc_right h2 {
-    padding: 15px; }
+    font-size: 34px;
+    padding: 15px 0 25px;
+    margin: 0; }
   .calc_right b {
     font-size: 13px;
     text-transform: uppercase; }
+  .calc_right p#show_sum, .calc_right p#show_day, .calc_right p#show_sum {
+    margin-bottom: 40px; }
   .calc_right table {
     width: 100%;
     margin-bottom: 40px; }
@@ -404,16 +409,20 @@ section.reviews {
     margin: 0;
     font-size: 28px;
     color: #00b44f; }
+  .calc_right:before {
+    content: '';
+    background: none; }
 
 .loan_repayment {
-  margin: 20px 0 80px 0; }
+  margin: 30px 0 0 0; }
   .loan_repayment .row {
     margin-top: 0; }
-  .loan_repayment .col-sm-4 {
-    margin-left: 70px; }
+  .loan_repayment .col-sm-7 section {
+    margin-bottom: 100px; }
   .loan_repayment h1 {
     text-align: left;
-    font-size: 55px; }
+    font-size: 55px;
+    margin-top: 0; }
   .loan_repayment h2 {
     text-align: left; }
   .loan_repayment p {
@@ -427,10 +436,9 @@ section.reviews {
   .loan_repayment .exact_sum {
     background: url("../img/exact_sum.jpg") top right no-repeat #00b44f;
     height: 254px;
-    padding: 25px 250px 0 50px;
-    margin-top: 70px;
-    color: #fff; }
+    padding: 15px 250px 0 50px; }
     .loan_repayment .exact_sum h2 {
+      color: #fff;
       margin: 0; }
     .loan_repayment .exact_sum p {
       color: #fff; }
@@ -451,10 +459,12 @@ section.application {
   section.application h1 {
     text-align: left;
     font-size: 55px; }
-  section.application .col-sm-6 div {
-    background: url("../img/icon-info.png") top left no-repeat;
-    padding-left: 35px;
-    margin-top: 40px; }
+  section.application .col-sm-6 {
+    margin-top: 80px; }
+    section.application .col-sm-6 div {
+      background: url("../img/icon-info.png") top left no-repeat;
+      padding-left: 35px;
+      margin-top: 40px; }
   section.application h3, section.application h5 {
     font-weight: bold; }
   section.application form {

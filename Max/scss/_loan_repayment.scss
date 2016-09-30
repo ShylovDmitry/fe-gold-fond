@@ -1,10 +1,11 @@
 .loan_repayment {
-  margin: 20px 0 80px 0;
+  margin: 30px 0 0 0;
   .row {margin-top: 0;}
-  .col-sm-4 {margin-left: 70px;}
+  .col-sm-7 section {margin-bottom: 100px;}
   h1 {
     text-align: left;
     font-size: 55px;
+    margin-top: 0;
   }
   h2 {text-align: left;}
   p {margin-top: 25px;}
@@ -18,10 +19,11 @@
   .exact_sum {
     background: url("../img/exact_sum.jpg") top right no-repeat $green;
     height: 254px;
-    padding: 25px 250px 0 50px;
-    margin-top: 70px;
-    color: #fff;
-    h2 {margin: 0;}
+    padding: 15px 250px 0 50px;
+    h2 {
+      color: #fff;
+      margin: 0;
+    }
     p {color: #fff}
   }
   .advantage {

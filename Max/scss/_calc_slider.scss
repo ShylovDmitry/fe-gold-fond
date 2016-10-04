@@ -9,11 +9,11 @@
     cursor: pointer;
     -ms-touch-action: none;
     touch-action: none;
-    top: -11px;
+    top: -13px;
     margin-left: -15px;
-    background: url("../img/slider_handle.png") 0 0 no-repeat;
+    background: url("../img/slider_handle.gif") 0 0 no-repeat;
     &:hover, &:focus {
-      background: url("../img/slider_handle_hover.png");
+      background: url("../img/slider_handle_hover.gif");
       outline: none;
     }
   }

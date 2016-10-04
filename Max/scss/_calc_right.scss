@@ -1,0 +1,39 @@
+.calc_right {
+  @extend .calc;
+  margin: 0;
+  width: 380px;
+  padding: 0 25px 25px 25px;
+  h2 {
+    font-size: 34px;
+    padding: 15px 0 25px;
+    margin: 0;
+  }
+  b {
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  p#show_sum, p#show_day {
+    margin-bottom: 40px;
+  }
+  table {
+    width: 100%;
+    margin-bottom: 40px;
+    th {
+      vertical-align: bottom;
+      padding-right: 12px;
+    }
+  }
+  #result_overpayment {
+    margin: 0;
+    font-size: 28px;
+  }
+  #result_return {
+    margin: 0;
+    font-size: 28px;
+    color: $green;
+  }
+  &:before {
+    content: '';
+    background: none;
+  }
+}

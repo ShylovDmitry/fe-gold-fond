@@ -1,0 +1,39 @@
+section.reviews {
+  margin-bottom: 100px;
+  .carousel-indicators {
+    bottom: -50px;
+  }
+  li {
+    border: none;
+    background: none;
+    text-indent: 0;
+    counter-increment: item;
+    &:before {
+       content: counter(item);
+    }
+    &.active {
+      font-size: 24px;
+    }
+  }
+  .carousel-control {
+    width: 30px;
+    background: none;
+    span {
+      margin: -16px;
+    }
+  }
+  .item {
+    .row {
+      margin: 30px 0;
+      p {
+        display: table-cell;
+        height: 170px;
+        vertical-align: middle;
+      }
+      .clearfix {
+        padding-bottom: 30px;
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.calc {
+  width: 930px;
+  margin: 120px auto 0;
+  box-shadow: 0 0 5px #aaaaaa;
+  position: relative;
+  .row {
+    padding-bottom: 100px;}
+  h3 {
+    padding: 70px 0 50px 55px;
+    font-weight: bold;
+  }
+  h4 {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  i{
+    float: right;
+    font-style: normal;
+  }
+  #show_day {
+    width: 70px;
+    margin: 20px auto 0;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+  #show_sum{
+    @extend #show_day;
+    width: 120px;
+    margin-bottom: 80px;
+  }
+  #result_sum {
+    font-size: 32px;
+    color: $green;
+  }
+  #result_overpayment, #result_return {
+    font-size: 28px;
+  }
+  .col-sm-8 {
+    border-right: 1px solid #7f92a5;
+    padding: 0 70px 40px;
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      right: -40px; top: 40px;
+      border: 20px solid transparent;
+      border-left: 20px solid #7f92a5;
+    }
+    &:after {
+      right: -39px; top: 40px;
+      border-left: 20px solid #fff;
+    }
+  }
+  .col-sm-4 {
+    padding: 0 55px;
+    h5 {
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    p {margin-bottom: 35px;}
+  }
+  &:before {
+    content: '';
+    background: url(../img/calc.png) top center no-repeat;
+    height: 119px;
+    width: 112px;
+    top: -78px;
+    left: 44%;
+    display: block;
+    position: absolute;
+  }
+}

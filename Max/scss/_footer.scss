@@ -1,0 +1,18 @@
+footer {
+  background: #f5f5f5;
+  border-top: 1px solid #ccc;
+  .col-sm-4 {
+    margin: 20px 0;
+  }
+  p {
+    font-size: 10px;
+  }
+  .glyphicon-menu-up {
+    font-size: 30px;
+    color: #ffa710;
+    &:hover {
+      color: #ffc76b;
+    }
+  }
+}
+

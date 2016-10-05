@@ -64,7 +64,7 @@ header {
 .menu a {
   text-decoration: none;
   padding: 8px 40px;
-  color: lightgrey;
+  color: #ffffff;
   display: inline-block; }
 
 .menu li {
@@ -382,6 +382,43 @@ li {
 .app-loans .container-fluid {
   background: #30455a;
   height: 100px;
-  pa-top: 60px; }
+  margin-top: 60px; }
+
+/*  ╨Т╤Б╨┐╨╗╨╕╨▓╨░╤О╤З╨╡ ╨▓╤Ц╨║╨╜╨╛  */
+.modal {
+  padding-top: 200px;
+  padding-left: 150px; }
+
+.modal-content {
+  color: #bfccd7;
+  text-align: center;
+  background-color: #30455a;
+  width: 480px;
+  border-radius: 0px; }
+
+.modal-title {
+  text-transform: uppercase; }
+
+.modal-title {
+  padding-top: 17px; }
+
+.modal-title-two {
+  line-height: 18px; }
+
+.modal-header {
+  border-bottom: none;
+  padding-bottom: 0px; }
+
+.modal-header .close {
+  color: #ffffff; }
+
+.modal-body {
+  padding-top: 0; }
+
+.modal-body .form-group {
+  padding-top: 15px; }
+
+.modal-body .form-group input {
+  width: 90%; }
 
 /*# sourceMappingURL=styles.css.map */

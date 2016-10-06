@@ -224,7 +224,7 @@ footer {
 
 section.express_loans {
   height: 545px;
-  background: url("../img/express-loans-bg.png") no-repeat bottom left; }
+  background: url("../img/express-loans-bg.png") no-repeat top left; }
   section.express_loans .container {
     padding-top: 5%; }
     section.express_loans .container h1 {
@@ -233,12 +233,11 @@ section.express_loans {
     section.express_loans .container ul {
       margin: 50px 0; }
       section.express_loans .container ul li {
-        list-style-image: url("../img/icon-ok.gif");
+        list-style-image: url("../img/icon-ok.png");
         font-size: 18px;
         padding-top: 15px; }
 
 section.how_get img {
-  height: 150px;
   margin: 50px 0 20px; }
 section.how_get .col-sm-6 div {
   text-transform: uppercase;
@@ -316,8 +315,7 @@ section.how_get p {
 
 section.info {
   margin-top: 100px;
-  background: url("../img/slider.gif") no-repeat bottom right #f5f5f5;
-  background-size: 570px;
+  background: url("../img/slider.png") no-repeat bottom right #f5f5f5;
   min-height: 480px;
   position: relative; }
   section.info .carousel-indicators li {
@@ -428,7 +426,7 @@ section.reviews {
   .loan_repayment p {
     margin-top: 25px; }
   .loan_repayment em {
-    background: url("../img/icon-ok.gif");
+    background: url("../img/icon-ok.png");
     width: 20px;
     height: 20px;
     display: inline-block;
@@ -450,7 +448,7 @@ section.reviews {
     .loan_repayment .advantage h3 {
       padding: 0 0 20px 10px; }
     .loan_repayment .advantage li {
-      list-style-image: url("../img/icon-ok.gif");
+      list-style-image: url("../img/icon-ok.png");
       padding-top: 15px;
       font-size: 14px; }
 
@@ -462,7 +460,7 @@ section.application {
   section.application .col-sm-6 {
     margin-top: 80px; }
     section.application .col-sm-6 div {
-      background: url("../img/icon-info.gif") top left no-repeat;
+      background: url("../img/icon-info.png") top left no-repeat;
       padding-left: 35px;
       margin-top: 40px; }
   section.application h3, section.application h5 {
@@ -500,9 +498,9 @@ section.application {
     touch-action: none;
     top: -13px;
     margin-left: -15px;
-    background: url("../img/slider_handle.gif") 0 0 no-repeat; }
+    background: url("../img/slider_handle.png") 0 0 no-repeat; }
     .ui-slider .ui-slider-handle:hover, .ui-slider .ui-slider-handle:focus {
-      background: url("../img/slider_handle_hover.gif");
+      background: url("../img/slider_handle_hover.png");
       outline: none; }
   .ui-slider .ui-slider-range {
     position: absolute;

@@ -9,10 +9,11 @@ section.reviews {
     text-indent: 0;
     counter-increment: item;
     &:before {
-       content: counter(item);
+      content: counter(item);
     }
     &.active {
       font-size: 24px;
+      padding: 0 20px 0 5px;
     }
   }
   .carousel-control {

@@ -21,7 +21,8 @@ button {
   button:active {
     background: linear-gradient(to bottom, #fec35a 0%, #ffae1e 100%);
     box-shadow: 0 1px #fe862d;
-    margin: 2px 0 -2px 0;
+    margin: 2px 0 -2px 0; }
+  button:focus {
     outline: none; }
 
 section h2 {
@@ -222,9 +223,8 @@ footer {
       padding-top: 10px; }
 
 section.express_loans {
-  height: 550px;
-  background: url("../img/express-loans-bg.png") no-repeat top left;
-  background-size: 600px; }
+  height: 545px;
+  background: url("../img/express-loans-bg.png") no-repeat top left; }
   section.express_loans .container {
     padding-top: 5%; }
     section.express_loans .container h1 {
@@ -238,7 +238,6 @@ section.express_loans {
         padding-top: 15px; }
 
 section.how_get img {
-  height: 150px;
   margin: 50px 0 20px; }
 section.how_get .col-sm-6 div {
   text-transform: uppercase;
@@ -317,7 +316,6 @@ section.how_get p {
 section.info {
   margin-top: 100px;
   background: url("../img/slider.png") no-repeat bottom right #f5f5f5;
-  background-size: 570px;
   min-height: 480px;
   position: relative; }
   section.info .carousel-indicators li {
@@ -346,7 +344,6 @@ section.info {
       margin-top: 20px; }
 
 section.advantage img {
-  height: 100px;
   margin: 50px 0 20px; }
 section.advantage h5 {
   color: #00b44f;
@@ -367,7 +364,8 @@ section.reviews {
     section.reviews li:before {
       content: counter(item); }
     section.reviews li.active {
-      font-size: 24px; }
+      font-size: 24px;
+      padding: 0 20px 0 5px; }
   section.reviews .carousel-control {
     width: 30px;
     background: none; }
@@ -498,7 +496,7 @@ section.application {
     cursor: pointer;
     -ms-touch-action: none;
     touch-action: none;
-    top: -11px;
+    top: -13px;
     margin-left: -15px;
     background: url("../img/slider_handle.png") 0 0 no-repeat; }
     .ui-slider .ui-slider-handle:hover, .ui-slider .ui-slider-handle:focus {

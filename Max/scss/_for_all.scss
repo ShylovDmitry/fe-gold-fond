@@ -29,6 +29,8 @@ button {
     background: linear-gradient(to bottom, #fec35a 0%,#ffae1e 100%);
     box-shadow: 0 1px #fe862d;
     margin: 2px 0 -2px 0;
+  }
+  &:focus {
     outline: none;
   }
 }

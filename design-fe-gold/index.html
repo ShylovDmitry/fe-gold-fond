@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
     <link rel="stylesheet" href="styles.scss">
 
+
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 <header>
@@ -38,7 +39,7 @@
                 <ul class="list-inline">
                     <li><a href="#section1">Экспресс-займы</a></li>
                     <li><a href="#section2">Получить займ</a></li>
-                    <li><a href="#">Погашение займа</a></li>
+                    <li><a href="repay_a_loan.html">Погашение займа</a></li>
                     <li><a href="#section3">О компании</a></li>
                     <li><a href="#section4">Блог</a></li>
                     <li class="active"><a href="loan_app.html">Заявка на заем</a></li>
@@ -175,14 +176,18 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-8">
+                <div class="col-md-7">
                     <h4>Сумма займа</h4>
                     <ul class="list-inline">
                         <li>3 000 руб.</li>
                         <li class="pull-right">30 000 руб.</li>
                     </ul>
+
+
+                    <div id="slider-range-min"></div>
+
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-5">
                     <ul>
                         <li></li>
                     </ul>
@@ -410,7 +415,7 @@
                     <input type="name" class="form-control" placeholder="Ваше имя">
                     <input type="phone-number" class="form-control" placeholder="Ваше номер телефона">
                     <input type="number" min="0" max="30000" step="500"  placeholder="Желаемая сумма (до 30 т.р.)">
-                    <button type="button" class="btn btn-warning">Подать заявку</button>
+                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Подать заявку</button>
                 </form>
             </div>
             <div class="col-md-6">
@@ -429,9 +434,9 @@
         <div class="row">
             <div class="col-md-10">
                 <ul class="list-inline">
-                    <li><a href="file:///C:/Users/SLAVA/Desktop/fe-gold/design-fe-gold/index.html#">Эспресс-займы</a></li>
-                    <li><a href="#">Как взять займ</a></li>
-                    <li><a href="#">Как погасить займ</a></li>
+                    <li><a href="index.html">Эспресс-займы</a></li>
+                    <li><a href="loan_app.html">Как взять займ</a></li>
+                    <li><a href="repay_a_loan.html">Как погасить займ</a></li>
                     <li><a href="#">О компании</a></li>
                     <li><a href="#">Блог</a></li>
                     <li><a href="#">Контакты</a></li>
@@ -486,6 +491,8 @@
         });
     });
 </script>
+
+
 
 </body>
 </html>

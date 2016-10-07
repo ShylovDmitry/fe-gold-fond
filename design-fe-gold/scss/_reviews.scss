@@ -28,8 +28,12 @@
 .carousel-indicators-numbers li.active {
   color: #00002c;
 }
-.carousel-control.right, .carousel-control.left {
+.carousel-control.right {
   background-image: none;
   color: #00002c;
   font-size: 30px;
+  width:30px;
+}
+.carousel-control.left {
+  @extend .carousel-control.right
 }

@@ -224,7 +224,8 @@ li {
 .carousel-control.right, .carousel-control.left {
   background-image: none;
   color: #00002c;
-  font-size: 30px; }
+  font-size: 30px;
+  width: 30px; }
 
 /* section  reviews */
 .make-request {
@@ -245,13 +246,13 @@ li {
   .make-request span {
     color: #57db5c; }
   .make-request form {
-    padding-left: 10%;
+    padding-left: 20%;
     border-right: 2px solid lightgray;
     color: black; }
   .make-request .col-md-6 {
     color: #FFFFFF; }
     .make-request .col-md-6 input {
-      margin: 0px 0 30px 250px;
+      margin: 0 0 30px 250px;
       padding-left: 20px;
       width: 250px;
       height: 40px;
@@ -348,6 +349,7 @@ li {
   .app-loans .form-group {
     padding-top: 20px; }
   .app-loans .form-group input {
+    border-radius: 0;
     width: 50%;
     padding: 10px 0px 10px 10px; }
   .app-loans .form-group input.input-comment {

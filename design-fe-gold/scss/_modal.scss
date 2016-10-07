@@ -1,0 +1,43 @@
+
+
+.modal {
+  padding-top:140px;
+  padding-left:150px;
+}
+.modal-content {
+  padding:0 10px 20px 10px;
+  color: #bfccd7;
+  text-align:center;
+  background-color: #30455a;
+  width:480px;
+  border-radius: 0px;
+}
+.modal-title {
+  text-transform: uppercase;
+  padding-top:17px;
+}
+.modal-title-two {
+  line-height: 18px;
+}
+.modal-header {
+  border-bottom: none;
+  padding-bottom: 0px;
+  .close {
+    color: #ffffff;
+  }
+}
+.modal-body {
+  padding-top:0;
+
+  .form-group {
+    padding-top:15px;
+
+    input{
+      width: 90%;
+      padding:10px 10px;
+    }
+    .input-comment {
+      padding-bottom:50px;
+    }
+  }
+}

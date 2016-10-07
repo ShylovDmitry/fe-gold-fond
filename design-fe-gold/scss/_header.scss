@@ -1,0 +1,45 @@
+
+header {
+  padding-top: 20px;
+
+  .cols-sm-3 {
+    float: left;
+    margin-bottom: 15px;
+  }
+
+  .textlogo {
+    color: #6e84ac;
+    float: left;
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+}
+
+.phone-number {
+  padding-left: 55px;
+  font-size: 22px;
+  color: #30455b;
+
+  span {
+    font-weight: bold;
+    color: #46678b;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.location {
+  border-bottom: 1px solid lightgrey;
+  padding-top: 10px;
+  color: #6e84ac;
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #295370;
+  }
+}

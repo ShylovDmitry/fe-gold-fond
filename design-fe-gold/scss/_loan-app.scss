@@ -1,0 +1,70 @@
+
+.menu li.visited  {
+  background-color:orange;
+  color:white;
+  padding:8px 40px;
+}
+.app-loans {
+  margin-top:40px;
+
+  h1 {
+    padding-top: 50px;
+  }
+
+  ul li {
+    color:grey;
+    font-size: 15px;
+  }
+
+  .app-home {
+    color:grey;
+    border-bottom: 1px solid lightgrey;
+    text-decoration: none;
+  }
+
+  h5 {
+    width:60%;
+    color:grey;
+    line-height: 20px;
+    letter-spacing: 0px;
+  }
+
+  form {
+    display: block;
+  }
+
+  .col-md-6 ul {
+    list-style-type: none;
+    padding: 0;
+
+    li{
+      content: counter(item);
+      background: url('https://pp.vk.me/c604828/v604828991/b610/lfjf9TEgMO8.jpg') left  no-repeat;
+      padding:10px 0 20px 30px;
+    }
+  }
+
+  .list-step {
+    color: #405871;
+    font-weight: bold;
+  }
+
+  .container-fluid {
+    background: #30455a;
+    height:100px;
+    margin-top:60px;
+  }
+
+  .form-group {
+    padding-top: 20px;
+  }
+
+  .form-group input {
+    width:50%;
+    padding:10px 0px 10px 10px;
+  }
+
+  .form-group input.input-comment {
+    padding-bottom: 60px;
+  }
+}

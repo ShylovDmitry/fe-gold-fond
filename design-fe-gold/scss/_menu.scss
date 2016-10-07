@@ -1,0 +1,47 @@
+
+.menu {
+  .container-fluid {
+    padding:0;
+  }
+
+  ul {
+    width: 100%;
+    padding:0;
+    margin:0;
+    border-top:solid 1px grey;
+    border-bottom:solid 1px grey;
+    text-align:center;
+    li {
+      margin-right:-4px;
+      padding:0;
+      border-right: solid 1px grey;
+    }
+
+    .active {
+      background-color:#00b44f;
+      color:white;
+    }
+
+    li:hover {
+      color:white;
+      background-color: #295370;
+    }
+  }
+
+  .row {
+    margin:0px;
+    width: 100%;
+  }
+
+  .list-inline {
+    width: 100%;
+    background-color: #30455b
+  }
+  a {
+    text-decoration: none;
+    padding: 8px 40px;
+    color: #ffffff;
+    display: inline-block;
+
+  }
+}

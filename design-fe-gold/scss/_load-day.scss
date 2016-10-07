@@ -1,0 +1,27 @@
+
+.loan-day {
+  text-align: center;
+
+  .col-lg-6 {
+    ul {
+
+      text-align: center;
+      list-style-type: none;
+
+      li img {
+        padding-top: 40px;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    .steps {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .explanation {
+      color: grey;
+    }
+  }
+}

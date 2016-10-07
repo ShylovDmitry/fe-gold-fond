@@ -1,0 +1,37 @@
+
+.slider-one {
+  background: url("https://raw.githubusercontent.com/ShylovDmitry/fe-gold-fond/03c2c01ec11082d13c166b7a18d98e8f0723050e/design/img/Slider.png") no-repeat bottom right #f5f5f5;
+  background-size: 570px;
+  min-height: 500px;
+  position: relative;
+
+  .col-md-8 {
+    color: #484848;
+    font-weight: bold;
+  }
+
+  .carousel-control {
+    position: relative;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 100%;
+    top: 20px;
+    font-size: 30px;
+  }
+
+  .carousel-indicators {
+    top: 180px;
+
+    li {
+      width: 13px;
+      border: 1px solid orange;
+      background-color: white;
+    }
+
+    li.active {
+      width: 13px;
+      border: 1px solid orange;
+      background-color: orange;
+    }
+  }
+}

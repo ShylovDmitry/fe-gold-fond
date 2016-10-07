@@ -8,11 +8,469 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
-    <link rel="stylesheet" href="scss/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 
 
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="cols-sm-3 mainlogo">
+                <a href="index.html"><img src="https://raw.githubusercontent.com/ShylovDmitry/fe-gold-fond/03c2c01ec11082d13c166b7a18d98e8f0723050e/design/img/logo.png"></a>
+            </div>
+
+            <div class="cols-sm3 textlogo">
+                Займы просто на месте!
+            </div>
+
+            <div class="cols-sm3 pull-right">
+                <div class="phone-number"><a href="tel:+3517502727">(351) <span>750-27-27</span></a></div>
+                <div class="location">Челябинск пр.Комсомольский 83</div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="menu">
+    <div class="container-fluid">
+        <div class="row">
+            <div id="menu">
+                <ul class="list-inline">
+                    <li><a href="#section1">Экспресс-займы</a></li>
+                    <li><a href="#section2">Получить займ</a></li>
+                    <li><a href="repay_a_loan.html">Погашение займа</a></li>
+                    <li><a href="#section3">О компании</a></li>
+                    <li><a href="#section4">Блог</a></li>
+                    <li class="active"><a href="loan_app.html">Заявка на заем</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mainpr">
+    <div id="section1">
+        <div class="container-fluid">
+            <div class="col-lg-6">
+                <img src="https://raw.githubusercontent.com/ShylovDmitry/fe-gold-fond/03c2c01ec11082d13c166b7a18d98e8f0723050e/design/img/express-loans-bg.png">
+            </div>
+            <div class="col-lg-6">
+                <h1>Экспресс-займы <br> в Челябинске</h1>
+                <br>
+                <ul class="privileges">
+                    <li><img src="https://raw.githubusercontent.com/ShylovDmitry/fe-gold-fond/master/Max/img/icon-ok.png"> Заем до <strong>1 месяца</strong> до <strong>30 000 рублей</strong></li>
+                    <li><img src="https://raw.githubusercontent.com/ShylovDmitry/fe-gold-fond/master/Max/img/icon-ok.png"> Выдается на месте при предьявлении паспорта и справки о з/п (2 НДФЛ)
+                    </li>
+                    <li><img src="https://raw.githubusercontent.com/ShylovDmitry/fe-gold-fond/master/Max/img/icon-ok.png"><strong> 0,55% в день</strong>. Ниже, чем у МФО!</li>
+                </ul>
+                <br>
+                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Оформить заявку</button>
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog modal-md">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Подать заявку на получение займа</h4>
+                                <h5 class="modal-title-two">Просто оставьте свой номер телефона, и мы перезвоним Вам
+                                    в течение рабочего дня.
+                                </h5>
+
+                                <h5>
+                                    Наш менеджер поможет Вам без проблем пройти всю процедуру оформления займа в нашей компании
+                                </h5>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <input type="name"  placeholder="Ваше имя(*)">
+                                </div>
+                                <div class="form-group">
+                                    <input type="phone" placeholder="Телефон для связи(*)">
+                                </div>
+
+                                <div class="form-group">
+                                    <input class="input-comment" type="comment" placeholder=" Комментарий" >
+                                </div>
+
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-warning">Отправить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="loans-a-day">
+    <div id="section2">
+        <div class="loan-day">
+            <div class="container">
+                <h1>Как получить займ за один день?</h1>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul>
+                            <li><img src="https://raw.githubusercontent.com/ShylovDmitry/fe-gold-fond/03c2c01ec11082d13c166b7a18d98e8f0723050e/design/img/step-1.png" width="180px"></li>
+                            <li><b>ШАГ 1</b></li>
+                            <li class="steps">Оформить предварительную заявку</li>
+                            <li class="explanation">Для этого звоните нам по телефону
+                                <br>
+                                (351) 750-27-27 или воспользуйтесь формой на сайте
+                            </li>
+                            <li><img src="https://raw.githubusercontent.com/ShylovDmitry/fe-gold-fond/03c2c01ec11082d13c166b7a18d98e8f0723050e/design/img/step-3.png" width="180px"></li>
+                            <li><b>ШАГ 3</b></li>
+                            <li class="steps">Оформить документы</li>
+                            <li class="explanation">Прямо на месте!
+                                <br>
+                                В день оформления Вы получите займ.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <ul>
+                            <li><img src="https://raw.githubusercontent.com/ShylovDmitry/fe-gold-fond/03c2c01ec11082d13c166b7a18d98e8f0723050e/design/img/step-2.png" width="180px"></li>
+                            <li><b>ШАГ 2</b></li>
+                            <li class="steps">Прийти в офис КПК</li>
+                            <li class="explanation">
+                                Взяв необходимые документы паспорт и
+                                <br>
+                                справку о зароботной плате (2 НДФЛ)
+                            </li>
+                            <li><img src="https://raw.githubusercontent.com/ShylovDmitry/fe-gold-fond/03c2c01ec11082d13c166b7a18d98e8f0723050e/design/img/step-4.png" width="180px"></li>
+                            <li><b>РЕЗУЛЬТАТ</b></li>
+                            <li class="steps">Займ получен</li>
+                            <li class="explanation">
+                                Да, это так просто! А итоговый процент в 0,55%/день
+                                <br>
+                                ниже среднего по МФО России.Это еще и выгодно!
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="calc">
+    <div class="calculator-logo">
+        <div class="container-fluid">
+            <h1>Рассчитайте платежи под свой займ!</h1>
+            <h4>С помощью калькулятора ниже Вы поймете, сколько нужно будет
+                <br>
+                возвратить и какой будет переплата по Вашему займу
+            </h4>
+        </div>
+    </div>
+    <div class="calculator">
+        <img src="https://raw.githubusercontent.com/ShylovDmitry/fe-gold-fond/03c2c01ec11082d13c166b7a18d98e8f0723050e/design/img/calc.png" width="180px">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Онлайн калькулятор</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7">
+                    <h4>Сумма займа</h4>
+                    <ul class="list-inline">
+                        <li>3 000 руб.</li>
+                        <li class="pull-right">30 000 руб.</li>
+                    </ul>
+
+
+                    <div id="slider-range-min"></div>
+
+                </div>
+                <div class="col-md-5">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="slider-one">
+    <div id="section3">
+        <div class="container">
+            <h1>Прозрачность. Вы заранее знаете сумму
+                <br>
+                переплаты!
+            </h1>
+            <div id="Carousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <p>Обращаясь к услугам кредитных кооперативов или микрофинансовых организаций очень просто пострадать
+                                    от действий мошенников. Они выдают займ, а затем неожиданно оказывается, что возвращать вам предстоит
+                                    сумму намного больше той, что декларировалось в начале...
+                                </p>
+                                <br>
+                                <p>С нами Вы точно знаете сумму переплаты заранее! 0,55% в день от суммы займа. 300 и 200 рублей в качестве
+                                    вступительного и паевого взноса (требуют все КПК) и 3% от суммы займа в резервный фонд КПК.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <p>Обращаясь к услугам кредитных кооперативов или микрофинансовых организаций очень просто пострадать
+                                    от действий мошенников. Они выдают займ, а затем неожиданно оказывается, что возвращать вам предстоит
+                                    сумму намного больше той, что декларировалось в начале...
+                                </p>
+                                <br>
+                                <p>С нами Вы точно знаете сумму переплаты заранее! 0,55% в день от суммы займа. 300 и 200 рублей в качестве
+                                    вступительного и паевого взноса (требуют все КПК) и 3% от суммы займа в резервный фонд КПК.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <p>Обращаясь к услугам кредитных кооперативов или микрофинансовых организаций очень просто пострадать
+                                    от действий мошенников. Они выдают займ, а затем неожиданно оказывается, что возвращать вам предстоит
+                                    сумму намного больше той, что декларировалось в начале...
+                                </p>
+                                <br>
+                                <p>С нами Вы точно знаете сумму переплаты заранее! 0,55% в день от суммы займа. 300 и 200 рублей в качестве
+                                    вступительного и паевого взноса (требуют все КПК) и 3% от суммы займа в резервный фонд КПК.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="carousel-control left" href="#Carousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-menu-left"></span>
+                </a>
+                <a class="carousel-control right" href="#Carousel" data-slide="next">
+                    <span class="glyphicon glyphicon-menu-right"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="privileges-expressloans">
+    <div class="container-fluid">
+        <h1>Преимущества экспресс-займа у нас</h1>
+        <div class="row">
+
+            <div class="col-md-4">
+                <ul>
+                    <li><img src="https://github.com/ShylovDmitry/fe-gold-fond/blob/master/Max/img/express-icon-1.png?raw=true" width="120"></li>
+                    <li class="privileges-steps">Оформление за один день</li>
+                    <li class="privileges-expl">Вы получаете на руки нужную вам сумму прямо в день визита в офис КПК</li>
+                    <li><img src="https://github.com/ShylovDmitry/fe-gold-fond/blob/master/Max/img/express-icon-4.png?raw=true" width="120"></li>
+                    <li class="privileges-steps">Ваша защищенность</li>
+                    <li class="privileges-expl">Все абсолютно официально, так как у нас есть все разрешительные документы и лицензии</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul>
+                    <li><img src="https://github.com/ShylovDmitry/fe-gold-fond/blob/master/Max/img/express-icon-2.png?raw=true" width="120"></li>
+                    <li class="privileges-steps">Низкий процент</li>
+                    <li class="privileges-expl">0,55% в сутки, что в несколько раз ниже, чем у других микрофинансовых организаций в нашей стране</li>
+                    <li><img src=https://github.com/ShylovDmitry/fe-gold-fond/blob/master/Max/img/express-icon-5.png?raw=true" width="120"></li>
+                    <li class="privileges-steps">Доступность</li>
+                    <li class="privileges-expl">Скорость и простота получения займа экономят ваше время, силы и нервы</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul>
+                    <li><img src="https://github.com/ShylovDmitry/fe-gold-fond/blob/master/Max/img/express-icon-3.png?raw=true" width="120"></li>
+                    <li class="privileges-steps">Простота оформления</li>
+                    <li class="privileges-expl">Для получения займа вы предьявляете только 2 документа: свой паспорт и справку о зарплате (2 НДФЛ)</li>
+                    <li><img src="https://github.com/ShylovDmitry/fe-gold-fond/blob/master/Max/img/express-icon-6.png?raw=true" width="120"></li>
+                    <li class="privileges-steps">Удобство</li>
+                    <li class="privileges-expl">В &#171Золотом фонде&#187 выдаются займы без поручителей и на любые нужды</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="reviews">
+    <div id="section4">
+        <div class="container">
+            <h1>Отзывы наших клиентов</h1>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators carousel-indicators-numbers">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active">1</li>
+                    /
+                    <li data-target="#myCarousel" data-slide-to="1">2</li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-sm-2 col-sm-offset-1">
+                                <img src="https://github.com/ShylovDmitry/fe-gold-fond/blob/master/Max/img/ava-1.jpg?raw=true" alt="">
+                            </div>
+                            <div class="col-sm-8">
+                                <p>
+                                    Нужны были деньги для покупки мобильного (старый сломался и нужна была срочная замена).
+                                    Брать кредит на 6-7 месяцев в банке желания не было. Как и ждать месяц зарплаты. Получил
+                                    деньги в &#171Золотом фонде&#187 и не жалею! Все было просто и достаточно быстро.
+                                    Доволен новым телефоном.
+                                    <br>
+                                    Сергей Т.
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-sm-2 col-sm-offset-1">
+                                <img src="https://github.com/ShylovDmitry/fe-gold-fond/blob/master/Max/img/ava-2.jpg?raw=true" alt="">
+                            </div>
+                            <div class="col-sm-8">
+                                <p>
+                                    Были сомнения перед обращением, стоит ли? Ребята молодцы! Все вопросы сняли еще на
+                                    консультации! Спасибо вам за вашу работу. Теперь точно знаю, что когда срочно нужны
+                                    деньги, то можно обратиться в &#171Золотой фондй&#187. Еще было бы здорово, если бы
+                                    могли сразу же перечислять деньги на пластиковую карту!
+                                    <br>
+                                    Анна К.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-2 col-sm-offset-1">
+                                <img src="https://github.com/ShylovDmitry/fe-gold-fond/blob/master/Max/img/ava-1.jpg?raw=true" alt="">
+                            </div>
+                            <div class="col-sm-8">
+                                <p>
+                                    Были сомнения перед обращением, стоит ли? Ребята молодцы! Все вопросы сняли еще на
+                                    консультации! Спасибо вам за вашу работу. Теперь точно знаю, что когда срочно нужны
+                                    деньги, то можно обратиться в &#171Золотой фондй&#187. Еще было бы здорово, если бы
+                                    могли сразу же перечислять деньги на пластиковую карту!
+                                    <br>
+                                    Сергей Т.
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-sm-2 col-sm-offset-1">
+                                <img src="https://github.com/ShylovDmitry/fe-gold-fond/blob/master/Max/img/ava-2.jpg?raw=true" alt="">
+                            </div>
+                            <div class="col-sm-8">
+                                <p>
+                                    Нужны были деньги для покупки мобильного (старый сломался и нужна была срочная замена).
+                                    Брать кредит на 6-7 месяцев в банке желания не было. Как и ждать месяц зарплаты. Получил
+                                    деньги в &#171Золотом фонде&#187 и не жалею! Все было просто и достаточно быстро.
+                                    Доволен новым телефоном.
+                                    <br>
+                                    Анна К.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="make-request">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Оформить заявку на заем</h1>
+                <h4>Итак, вам требуется займ в кратчайшие сроки? Тогда не стоит терять времени! Просто оформите заявку
+                    <br>
+                    на сайте или звоните нам по телефону <span>(351) <b>750-27-27</b></span>
+                </h4>
+            </div>
+            <div class="col-md-6">
+                <form action="#">
+                    <input type="name" class="form-control" placeholder="Ваше имя">
+                    <input type="phone-number" class="form-control" placeholder="Ваше номер телефона">
+                    <input type="number" min="0" max="30000" step="500"  placeholder="Желаемая сумма (до 30 т.р.)">
+                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Подать заявку</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h4>Условия выдачи:</h4>
+                <ul>
+                    <li><b>Минимум документов</b></li>
+                    <li>Срок займа - <b>до 1 месяца</b></li>
+                    <li>Сумма - <b>до 30 000 рублей.</b> Под <b> 0,55% в день</b></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bottom-menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+                <ul class="list-inline">
+                    <li><a href="index.html">Эспресс-займы</a></li>
+                    <li><a href="loan_app.html">Как взять займ</a></li>
+                    <li><a href="repay_a_loan.html">Как погасить займ</a></li>
+                    <li><a href="#section3">О компании</a></li>
+                    <li><a href="#section4">Блог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <a href="#"><img src="https://raw.githubusercontent.com/ShylovDmitry/fe-gold-fond/bd7378924a8ce8d2429fbfc1d6f97250a6a162c7/design/img/social-icon.png" alt="social"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <footer class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <p>&#169 2015 КПК СЦ "Золотой Фонд"</p>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="glyphicon glyphicon-menu-up"></a>
+            </div>
+            <div class="col-md-4">
+                <p>Разработка Огура С.</p>
+            </div>
+            <div class="col-md-12">
+                <p>В Челябинской и Свердловской области Все услуги представляются только членам КПК СЦ "Золотой Фойнд"
+                    вступительный взнос 300 рублей (возращается на выходе на КПК).Lorem ipsum dolor sit amet,
+                    adipisicing elit. Animi asperiores, beatae expedita facilis fugit harum id incidunt iste
+                    minima minus non perferendis quia recusandae tempora voluptatum! Architecto ex illo ipsam
+                    molestiae pariatur quam quas qui repellendus similique, sint sit tempora ut voluptatum.
+                </p>
+            </div>
+        </div>
+    </footer>
+</section>
 
 
 
@@ -23,8 +481,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
 
 
 

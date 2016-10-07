@@ -10,15 +10,18 @@ body {
 
 /* section body */
 header {
-  padding-top: 20px; }
-  header .cols-sm-3 {
+  padding-top: 18px; }
+  header .col-md-3 {
     float: left;
     margin-bottom: 15px; }
   header .textlogo {
     color: #6e84ac;
     float: left;
     padding-top: 30px;
-    padding-left: 30px; }
+    padding-left: 50px; }
+
+.pull-right {
+  padding-right: 59px; }
 
 .phone-number {
   padding-left: 55px;
@@ -76,7 +79,7 @@ header {
   background-color: #f8f7f9;
   padding: 0px; }
 
-.col-lg-6 {
+.col-md-6 {
   padding: 0px; }
 
 h1 {
@@ -108,17 +111,17 @@ li {
 /* section mainpr */
 .loan-day {
   text-align: center; }
-  .loan-day .col-lg-6 ul {
+  .loan-day .col-md-6 ul {
     text-align: center;
     list-style-type: none; }
-    .loan-day .col-lg-6 ul li img {
+    .loan-day .col-md-6 ul li img {
       padding-top: 40px;
       display: block;
       margin: 0 auto; }
-  .loan-day .col-lg-6 .steps {
+  .loan-day .col-md-6 .steps {
     font-size: 20px;
     font-weight: bold; }
-  .loan-day .col-lg-6 .explanation {
+  .loan-day .col-md-6 .explanation {
     color: grey; }
 
 /* section load-day */
@@ -226,6 +229,8 @@ li {
 /* section  reviews */
 .make-request {
   margin-top: 70px; }
+  .make-request .btn-warning {
+    margin-right: 50px; }
   .make-request .container-fluid {
     background-color: #2f445a;
     padding-bottom: 60px; }
@@ -240,6 +245,7 @@ li {
   .make-request span {
     color: #57db5c; }
   .make-request form {
+    padding-left: 10%;
     border-right: 2px solid lightgray;
     color: black; }
   .make-request .col-md-6 {

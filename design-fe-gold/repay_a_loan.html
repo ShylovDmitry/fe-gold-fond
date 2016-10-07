@@ -16,15 +16,15 @@
 <header>
     <div class="container">
         <div class="row">
-            <div class="cols-sm-3 mainlogo">
+            <div class="col-md-3 mainlogo">
                 <a href="index.html"><img src="https://raw.githubusercontent.com/ShylovDmitry/fe-gold-fond/03c2c01ec11082d13c166b7a18d98e8f0723050e/design/img/logo.png"></a>
             </div>
 
-            <div class="cols-sm3 textlogo">
+            <div class="col-md-3 textlogo">
                 Займы просто на месте!
             </div>
 
-            <div class="cols-sm3 pull-right">
+            <div class="col-md-3 pull-right">
                 <div class="phone-number"><a href="tel:+3517502727">(351) <span>750-27-27</span></a></div>
                 <div class="location"><a>Челябинск пр.Комсомольский 83</a></div>
             </div>
@@ -228,15 +228,7 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<script type="text/javascript">
-    $(document).ready(function(){
-        $("#menu").on("click","a", function (event) {
-            var id  = $(this).attr('href'),
-                    top = $(id).offset().top;
-            $('body,html').animate({scrollTop: top}, 1500);
-        });
-    });
-</script>
+
 
 
 

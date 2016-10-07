@@ -2,6 +2,10 @@
 .make-request {
   margin-top: 70px;
 
+  .btn-warning {
+    margin-right:50px;
+  }
+
   .container-fluid {
     background-color: #2f445a;
     padding-bottom: 60px;
@@ -24,6 +28,7 @@
   }
 
   form {
+    padding-left: 10%;
     border-right:2px solid lightgray;
     color:black;
   }

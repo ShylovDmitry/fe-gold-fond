@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
-    <link rel="stylesheet" href="scss/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 
 
 </head>
@@ -18,7 +18,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 mainlogo">
-                <a href="index.html"><img src="https://raw.githubusercontent.com/ShylovDmitry/fe-gold-fond/03c2c01ec11082d13c166b7a18d98e8f0723050e/design/img/logo.png"></a>
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
             </div>
 
             <div class="col-md-3 textlogo">
@@ -36,7 +36,6 @@
 <section class="menu">
     <div class="container-fluid">
         <div class="row">
-            <div id="menu">
                 <ul class="list-inline">
                     <li><a href="#section1">Экспресс-займы</a></li>
                     <li><a href="#section2">Получить займ</a></li>
@@ -45,7 +44,6 @@
                     <li><a href="#section4">Блог</a></li>
                     <li class="active"><a href="loan_app.html">Заявка на заем</a></li>
                 </ul>
-            </div>
         </div>
     </div>
 </section>
@@ -55,48 +53,57 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="https://raw.githubusercontent.com/ShylovDmitry/fe-gold-fond/03c2c01ec11082d13c166b7a18d98e8f0723050e/design/img/express-loans-bg.png">
+                    <img src="img/express-loans-bg.png" alt="express-loans">
                 </div>
                 <div class="col-md-6">
                     <h1>Экспресс-займы <br> в Челябинске</h1>
                     <br>
                     <ul class="privileges">
-                        <li><img src="https://raw.githubusercontent.com/ShylovDmitry/fe-gold-fond/master/Max/img/icon-ok.png"> Заем до <strong>1 месяца</strong> до <strong>30 000 рублей</strong></li>
-                        <li><img src="https://raw.githubusercontent.com/ShylovDmitry/fe-gold-fond/master/Max/img/icon-ok.png"> Выдается на месте при предьявлении паспорта и справки о з/п (2 НДФЛ)
+                        <li><img src="img/icon-ok.png"> Заем до <strong>1 месяца</strong> до <strong>30 000 рублей</strong></li>
+                        <li><img src="img/icon-ok.png"> Выдается на месте при предьявлении паспорта и справки о з/п (2 НДФЛ)
                         </li>
-                        <li><img src="https://raw.githubusercontent.com/ShylovDmitry/fe-gold-fond/master/Max/img/icon-ok.png"><strong> 0,55% в день</strong>. Ниже, чем у МФО!</li>
+                        <li><img src="img/icon-ok.png"><strong> 0,55% в день</strong>. Ниже, чем у МФО!</li>
                     </ul>
                     <br>
-                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Оформить заявку</button>
+                    <form>
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Оформить заявку</button>
+                    </form>
                     <div class="modal fade" id="myModal" role="dialog">
                         <div class="modal-dialog modal-md">
                             <!-- Modal content-->
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Подать заявку на получение займа</h4>
-                                    <h5 class="modal-title-two">Просто оставьте свой номер телефона, и мы перезвоним Вам
-                                        в течение рабочего дня.
-                                    </h5>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-                                    <h5>
-                                        Наш менеджер поможет Вам без проблем пройти всю процедуру оформления займа в нашей компании
-                                    </h5>
+                                        <h4 class="modal-title">Подать заявку на получение займа</h4>
+                                        <h5 class="modal-title-two">Просто оставьте свой номер телефона, и мы перезвоним Вам
+                                            в течение рабочего дня.
+                                        </h5>
+
+                                        <h5>
+                                            Наш менеджер поможет Вам без проблем пройти всю процедуру оформления займа в нашей компании
+                                        </h5>
                                 </div>
                                 <div class="modal-body">
                                     <div class="form-group">
-                                        <input type="name"  placeholder="Ваше имя(*)">
+                                        <form>
+                                             <input type="name"  placeholder="Ваше имя(*)">
+                                        </form>
                                     </div>
                                     <div class="form-group">
-                                        <input type="phone" placeholder="Телефон для связи(*)">
+                                        <form>
+                                             <input type="phone" placeholder="Телефон для связи(*)">
+                                        </form>
                                     </div>
-
                                     <div class="form-group">
-                                        <input class="input-comment" type="comment" placeholder=" Комментарий" >
+                                        <form>
+                                             <input class="input-comment" type="comment" placeholder=" Комментарий" >
+                                        </form>
                                     </div>
-
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-warning">Отправить</button>
+                                        <form>
+                                              <button type="submit" class="btn btn-warning">Отправить</button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -112,38 +119,47 @@
     <div id="section2">
         <div class="loan-day">
             <div class="container">
-                <h1>Как получить займ за один день?</h1>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Как получить займ за один день?</h1>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <ul>
-                            <li><img src="https://raw.githubusercontent.com/ShylovDmitry/fe-gold-fond/03c2c01ec11082d13c166b7a18d98e8f0723050e/design/img/step-1.png" width="180px"></li>
-                            <li><b>ШАГ 1</b></li>
-                            <li class="steps">Оформить предварительную заявку</li>
-                            <li class="explanation">Для этого звоните нам по телефону
-                                <br>
-                                (351) 750-27-27 или воспользуйтесь формой на сайте
-                            </li>
-                            <li><img src="https://raw.githubusercontent.com/ShylovDmitry/fe-gold-fond/03c2c01ec11082d13c166b7a18d98e8f0723050e/design/img/step-3.png" width="180px"></li>
-                            <li><b>ШАГ 3</b></li>
-                            <li class="steps">Оформить документы</li>
-                            <li class="explanation">Прямо на месте!
-                                <br>
-                                В день оформления Вы получите займ.
-                            </li>
-                        </ul>
+                            <ul class = "box">
+                                <li><img src="img/step-1.png" alt ="Execute app" width="180px"></li>
+                                <li><b>ШАГ 1</b></li>
+                                <li class="steps">Оформить предварительную заявку</li>
+                                <li class="explanation">Для этого звоните нам по телефону
+                                    <br>
+                                    (351) 750-27-27 или воспользуйтесь формой на сайте
+                                </li>
+                            </ul>
+                        <ul class = "box">
+                                <li><img src="img/step-3.png" alt="Execute docs" width="180px"></li>
+                                <li><b>ШАГ 3</b></li>
+                                <li class="steps">Оформить документы</li>
+                                <li class="explanation">Прямо на месте!
+                                    <br>
+                                    В день оформления Вы получите займ.
+                                </li>
+                            </ul>
                     </div>
 
                     <div class="col-md-6">
-                        <ul>
-                            <li><img src="https://raw.githubusercontent.com/ShylovDmitry/fe-gold-fond/03c2c01ec11082d13c166b7a18d98e8f0723050e/design/img/step-2.png" width="180px"></li>
+                        <ul class = "box">
+                            <li><img src="img/step-2.png" alt="Come to office" width="180px"></li>
                             <li><b>ШАГ 2</b></li>
                             <li class="steps">Прийти в офис КПК</li>
                             <li class="explanation">
                                 Взяв необходимые документы паспорт и
                                 <br>
                                 справку о зароботной плате (2 НДФЛ)
+
                             </li>
-                            <li><img src="https://raw.githubusercontent.com/ShylovDmitry/fe-gold-fond/03c2c01ec11082d13c166b7a18d98e8f0723050e/design/img/step-4.png" width="180px"></li>
+                        </ul>
+                        <ul class = "box">
+                            <li><img src="img/step-4.png" alt="Loan accepted" width="180px"></li>
                             <li><b>РЕЗУЛЬТАТ</b></li>
                             <li class="steps">Займ получен</li>
                             <li class="explanation">
@@ -163,16 +179,18 @@
     <div class="calculator-logo">
         <div class="container-fluid">
             <div class="row">
-                <h1>Рассчитайте платежи под свой займ!</h1>
-                <h4>С помощью калькулятора ниже Вы поймете, сколько нужно будет
-                    <br>
-                    возвратить и какой будет переплата по Вашему займу
-                </h4>
+                <div class="col-md-12">
+                    <h1>Рассчитайте платежи под свой займ!</h1>
+                    <h4>С помощью калькулятора ниже Вы поймете, сколько нужно будет
+                        <br>
+                        возвратить и какой будет переплата по Вашему займу
+                    </h4>
+                </div>
             </div>
         </div>
     </div>
     <div class="calculator">
-        <img src="https://raw.githubusercontent.com/ShylovDmitry/fe-gold-fond/03c2c01ec11082d13c166b7a18d98e8f0723050e/design/img/calc.png" width="180px">
+        <img src="img/calc.png" width="180px">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -204,11 +222,13 @@
 <section class="slider-one">
     <div id="section3">
         <div class="container">
-
-            <h1>Прозрачность. Вы заранее знаете сумму
-                <br>
-                переплаты!
-            </h1>
+            <div class="row">
+                <div class="col-md-10 col-offset-2">
+                    <h1>Прозрачность. Вы заранее знаете сумму
+                        переплаты!
+                    </h1>
+                </div>
+            </div>
             <div id="Carousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -278,38 +298,38 @@
 
 <section class="privileges-expressloans">
     <div class="container-fluid">
-        <h1>Преимущества экспресс-займа у нас</h1>
         <div class="row">
+            <div class="col-md-12">
+                <h1>Преимущества экспресс-займа у нас</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                    <img src="img/express-icon-1.png" alt="Execute for one day" width="120">
+                        <h5 class="privileges-steps">Оформление за один день</h5>
+                            <p class="privileges-expl">Вы получаете на руки нужную вам сумму прямо в день визита в офис КПК</p>
 
-            <div class="col-md-4">
-                <ul>
-                    <li><img src="https://github.com/ShylovDmitry/fe-gold-fond/blob/master/Max/img/express-icon-1.png?raw=true" width="120"></li>
-                    <li class="privileges-steps">Оформление за один день</li>
-                    <li class="privileges-expl">Вы получаете на руки нужную вам сумму прямо в день визита в офис КПК</li>
-                    <li><img src="https://github.com/ShylovDmitry/fe-gold-fond/blob/master/Max/img/express-icon-4.png?raw=true" width="120"></li>
-                    <li class="privileges-steps">Ваша защищенность</li>
-                    <li class="privileges-expl">Все абсолютно официально, так как у нас есть все разрешительные документы и лицензии</li>
-                </ul>
+                    <img src="img/express-icon-4.png" alt="Your defence" width="120">
+                        <h5 class="privileges-steps">Ваша защищенность</h5>
+                            <p class="privileges-expl">Все абсолютно официально, так как у нас есть все разрешительные документы и лицензии</p>
             </div>
             <div class="col-md-4">
-                <ul>
-                    <li><img src="https://github.com/ShylovDmitry/fe-gold-fond/blob/master/Max/img/express-icon-2.png?raw=true" width="120"></li>
-                    <li class="privileges-steps">Низкий процент</li>
-                    <li class="privileges-expl">0,55% в сутки, что в несколько раз ниже, чем у других микрофинансовых организаций в нашей стране</li>
-                    <li><img src=https://github.com/ShylovDmitry/fe-gold-fond/blob/master/Max/img/express-icon-5.png?raw=true" width="120"></li>
-                    <li class="privileges-steps">Доступность</li>
-                    <li class="privileges-expl">Скорость и простота получения займа экономят ваше время, силы и нервы</li>
-                </ul>
+                    <img src="img/express-icon-2.png" alt="Low percentage" width="120">
+                         <h5 class="privileges-steps">Низкий процент</h5>
+                            <p class="privileges-expl">0,55% в сутки, что в несколько раз ниже, чем у других микрофинансовых организаций в нашей стране</p>
+
+                    <img src="img/express-icon-5.png" alt="Accessibility" width="120">
+                         <h5 class="privileges-steps">Доступность</h5>
+                            <p class="privileges-expl">Скорость и простота получения займа экономят ваше время, силы и нервы</p>
             </div>
             <div class="col-md-4">
-                <ul>
-                    <li><img src="https://github.com/ShylovDmitry/fe-gold-fond/blob/master/Max/img/express-icon-3.png?raw=true" width="120"></li>
-                    <li class="privileges-steps">Простота оформления</li>
-                    <li class="privileges-expl">Для получения займа вы предьявляете только 2 документа: свой паспорт и справку о зарплате (2 НДФЛ)</li>
-                    <li><img src="https://github.com/ShylovDmitry/fe-gold-fond/blob/master/Max/img/express-icon-6.png?raw=true" width="120"></li>
-                    <li class="privileges-steps">Удобство</li>
-                    <li class="privileges-expl">В &#171Золотом фонде&#187 выдаются займы без поручителей и на любые нужды</li>
-                </ul>
+                     <img src="img/express-icon-3.png" alt="Easy to execute" width="120">
+                        <h5 class="privileges-steps">Простота оформления</h5>
+                             <p class="privileges-expl">Для получения займа вы предьявляете только 2 документа: свой паспорт и справку о зарплате (2 НДФЛ)</p>
+
+                     <img src="img/express-icon-6.png" alt="Comfort" width="120">
+                        <h5 class="privileges-steps">Удобство</h5>
+                            <p class="privileges-expl">В &#171Золотом фонде&#187 выдаются займы без поручителей и на любые нужды</p>
             </div>
         </div>
     </div>
@@ -318,7 +338,11 @@
 <section class="reviews">
     <div id="section4">
         <div class="container">
-            <h1>Отзывы наших клиентов</h1>
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Отзывы наших клиентов</h1>
+                </div>
+            </div>
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators carousel-indicators-numbers">
@@ -331,7 +355,7 @@
                     <div class="item active">
                         <div class="row">
                             <div class="col-md-2 col-md-offset-1">
-                                <img src="https://github.com/ShylovDmitry/fe-gold-fond/blob/master/Max/img/ava-1.jpg?raw=true" alt="">
+                                <img src="img/ava-1.jpg" alt="ava-1">
                             </div>
                             <div class="col-md-8">
                                 <p>
@@ -345,7 +369,7 @@
                             </div>
                             <div class="clearfix"></div>
                             <div class="col-md-2 col-md-offset-1">
-                                <img src="https://github.com/ShylovDmitry/fe-gold-fond/blob/master/Max/img/ava-2.jpg?raw=true" alt="">
+                                <img src="img/ava-2.jpg" alt="ava-2">
                             </div>
                             <div class="col-md-8">
                                 <p>
@@ -362,7 +386,7 @@
                     <div class="item">
                         <div class="row">
                             <div class="col-md-2 col-md-offset-1">
-                                <img src="https://github.com/ShylovDmitry/fe-gold-fond/blob/master/Max/img/ava-1.jpg?raw=true" alt="">
+                                <img src="img/ava-1.jpg" alt="ava-1">
                             </div>
                             <div class="col-md-8">
                                 <p>
@@ -376,7 +400,7 @@
                             </div>
                             <div class="clearfix"></div>
                             <div class="col-md-2 col-md-offset-1">
-                                <img src="https://github.com/ShylovDmitry/fe-gold-fond/blob/master/Max/img/ava-2.jpg?raw=true" alt="">
+                                <img src="img/ava-2.jpg" alt="ava-2">
                             </div>
                             <div class="col-md-8">
                                 <p>
@@ -447,7 +471,7 @@
                 </ul>
             </div>
             <div class="col-md-2">
-                <a href="#"><img src="https://raw.githubusercontent.com/ShylovDmitry/fe-gold-fond/bd7378924a8ce8d2429fbfc1d6f97250a6a162c7/design/img/social-icon.png" alt="social"></a>
+                <a href="#"><img src="img/social-icon.png" alt="social"></a>
             </div>
         </div>
     </div>

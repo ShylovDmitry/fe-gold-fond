@@ -1,25 +1,26 @@
 
 .mainpr {
 
+  .col-md-6 {
+    padding:0px;
+
+    ul {
+
+      li {
+        padding-left: 45px;
+        background: url('../img/icon-ok.png') no-repeat;
+        padding-bottom: 10px;
+      }
+    }
+  }
+
   .row {
-    margin:0px;
+    margin: 0px;
   }
   .container-fluid {
-  background-color: #f8f7f9;
-  padding: 0px;
-  margin: 0px;
-  }
-}
-.col-md-6 {
-  padding:0px;
-
-  ul {
-
-    li {
-      padding-left: 45px;
-      background: url('../img/icon-ok.png') no-repeat;
-      padding-bottom: 10px;
-    }
+    background-color: #f8f7f9;
+    padding: 0px;
+    margin: 0px;
   }
 }
 

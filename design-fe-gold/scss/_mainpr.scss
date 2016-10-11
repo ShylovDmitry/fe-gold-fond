@@ -1,11 +1,26 @@
 
-.mainpr .container-fluid {
+.mainpr {
+
+  .row {
+    margin:0px;
+  }
+  .container-fluid {
   background-color: #f8f7f9;
-  padding:0px;
-  margin:0px;
+  padding: 0px;
+  margin: 0px;
+  }
 }
 .col-md-6 {
   padding:0px;
+
+  ul {
+
+    li {
+      padding-left: 45px;
+      background: url('../img/icon-ok.png') no-repeat;
+      padding-bottom: 10px;
+    }
+  }
 }
 
 h1 {
@@ -20,12 +35,7 @@ h1 {
   list-style-type: none;
   font-size:15px;
 }
-.privileges img {
-  padding-right:17px;
-}
-li {
-  padding-bottom:10px;
-}
+
 .btn {
   font-family:Corbel;
   font-size:13px;

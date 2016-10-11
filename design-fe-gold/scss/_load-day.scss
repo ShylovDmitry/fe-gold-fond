@@ -2,25 +2,33 @@
 .loan-day {
   text-align: center;
 
+  h2 {
+    font-size: 43px;
+    color: #5d5d5d;
+    margin-top:100px;
+    margin-bottom:20px;
+  }
+
   .col-md-6 {
-    ul {
-
-      text-align: center;
-      list-style-type: none;
-
-      li img {
-        padding-top: 40px;
-        display: block;
-        margin: 0 auto;
-      }
-    }
 
     .steps {
+      color:black;
+      padding-top:25px;
+    }
+    img {
+      padding-top: 40px;
+      display: block;
+      margin: 0 auto;
+      width:180px;
+    }
+
+
+    h5 {
       font-size: 20px;
       font-weight: bold;
     }
 
-    .explanation {
+    p{
       color: grey;
     }
   }

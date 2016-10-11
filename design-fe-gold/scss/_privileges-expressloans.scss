@@ -2,20 +2,24 @@
 .privileges-expressloans {
   text-align: center;
 
-  ul {
-    list-style-type: none;
+  h2 {
+    font-size: 43px;
+    color: #5d5d5d;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+  img {
+    width: 120px;
+    padding-top: 70px;
+    display: block;
+    margin: auto;
   }
 
-  img {
-    padding-top:70px;
-    display:block;
-    margin:auto;
+  h5 {
+    font-size: 17px;
+    color: #00b44f;
   }
-}
-.privileges-steps {
-  font-size: 17px;
-  color: #00b44f;
-}
-.privileges-expl {
-  color:grey;
+  p {
+    color: grey;
+  }
 }

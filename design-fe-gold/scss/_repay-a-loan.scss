@@ -19,6 +19,11 @@
     li {
       color: grey;
       font-size: 15px;
+
+      img {
+        width:20px;
+      }
+
     }
   }
   .app-home {
@@ -66,12 +71,11 @@
   list-style-type: none;
 
   li{
+    padding-left:40px;
+    background: url('../img/icon-ok.png') no-repeat;
     color:black;
   }
-  img {
-    padding-right: 15px;
-  }
-}
 
+}
 
 

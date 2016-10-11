@@ -1,3 +1,5 @@
-# fe-gold-fond
+﻿
+Project "Золотой - фонд "
 
-Добавил картинки в design.
+
+Practicing and creating responsive web site,with different sliders and modal windows,using HTML/CSS3/SASS/BootStrap.

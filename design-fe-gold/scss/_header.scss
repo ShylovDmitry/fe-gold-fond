@@ -1,5 +1,5 @@
 
-header {
+.header-nav {
   padding-top:18px;
 
   .col-md-3 {
@@ -14,13 +14,12 @@ header {
     padding-left: 50px;
   }
 }
-.pull-right {
-  padding-right:50px;
-}
+
 .phone-number {
   padding-left: 55px;
   font-size: 22px;
   color: #30455b;
+
 
   span {
     font-weight: bold;
@@ -36,7 +35,7 @@ header {
   border-bottom: 1px solid lightgrey;
   padding-top: 10px;
   color: #6e84ac;
-
+  width:88%;
   a {
     text-decoration: none;
   }

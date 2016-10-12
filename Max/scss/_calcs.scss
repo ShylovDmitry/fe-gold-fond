@@ -71,3 +71,77 @@
     position: absolute;
   }
 }
+
+.calc_right {
+  @extend .calc;
+  margin: 0;
+  width: 380px;
+  padding: 0 25px 25px 25px;
+  h2 {
+    font-size: 34px;
+    padding: 15px 0 25px;
+    margin: 0;
+  }
+  b {
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  p#show_sum, p#show_day {
+    margin-bottom: 40px;
+  }
+  table {
+    width: 100%;
+    margin-bottom: 40px;
+    th {
+      vertical-align: bottom;
+      padding-right: 12px;
+    }
+  }
+  #result_overpayment {
+    margin: 0;
+    font-size: 28px;
+  }
+  #result_return {
+    margin: 0;
+    font-size: 28px;
+    color: $green;
+  }
+  &:before {
+    content: '';
+    background: none;
+  }
+}
+
+.ui-slider {
+  position: relative;
+  text-align: left;
+  .ui-slider-handle {
+    position: absolute;
+    z-index: 5;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    -ms-touch-action: none;
+    touch-action: none;
+    top: -13px;
+    margin-left: -15px;
+    background: url("../img/slider_handle.png") 0 0 no-repeat;
+    &:hover, &:focus {
+      background: url("../img/slider_handle_hover.png");
+      outline: none;
+    }
+  }
+  .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    height: 100%;
+    background: $green;
+  }
+}
+.ui-widget-content {
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  border-radius: 10px;
+  height: 7px;
+}

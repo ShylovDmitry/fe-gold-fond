@@ -44,3 +44,44 @@ section {
     margin-bottom: 20px;
   }
 }
+
+header {
+  margin: 20px 0;
+  height: 70px;
+  .logo {
+    padding: 0;
+  }
+  .tagline {
+    padding-top: 30px;
+    font-size: 14px;
+  }
+  .head_tel {
+    font-size: 28px;
+  }
+  .head_address {
+    font-size: 16px;
+  }
+  a {
+    color: $main-color;
+    text-decoration: none;
+    &:hover {text-decoration: none;}
+  }
+}
+
+footer {
+  background: #f5f5f5;
+  border-top: 1px solid #ccc;
+  .col-sm-4 {
+    margin: 20px 0;
+  }
+  p {
+    font-size: 10px;
+  }
+  .glyphicon-menu-up {
+    font-size: 30px;
+    color: #ffa710;
+    &:hover {
+      color: #ffc76b;
+    }
+  }
+}

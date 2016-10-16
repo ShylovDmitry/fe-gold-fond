@@ -10,7 +10,7 @@
   text-align:center;
   background-color: #30455a;
   width:480px;
-  border-radius: 0px;
+  border-radius: 0;
 }
 .modal-title {
   text-transform: uppercase;
@@ -21,7 +21,7 @@
 }
 .modal-header {
   border-bottom: none;
-  padding-bottom: 0px;
+  padding-bottom: 0;
   .close {
     color: #ffffff;
   }

@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
-    <link rel="stylesheet" href="scss/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 
 </head>
 <body>
@@ -58,20 +58,28 @@
                             <li><a href="index.html" class="app-home">Главная </a>&#187 Заяка на заем</li>
                         </ul>
                     </div>
+                </div>
 
-                    <h1>Заявка на заем</h1>
-                        <br>
-                    <h5>Здесь расположена простая и понятная форма заявки, которую вы заполняете перед тем,
-                        <br>
-                        как получить заем в нашем фонде. Заполнив и отослав нам такую заявку, вы существенно
-                        <br>
-                        сэкономите время получения займа в нашем офисе.
-                    </h5>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Заявка на заем</h1>
+                            <br>
+                    </div>
 
+                    <div class="col-md-12">
+                        <h5>Здесь расположена простая и понятная форма заявки, которую вы заполняете перед тем,
+                            <br>
+                            как получить заем в нашем фонде. Заполнив и отослав нам такую заявку, вы существенно
+                            <br>
+                            сэкономите время получения займа в нашем офисе.
+                        </h5>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-md-6">
                         <form>
                                <div class="form-group">
-                                    <input type="name" placeholder="Ваше имя (*)">
+                                    <input type="name" placeholder="Ваше имя (*)" required>
                                </div>
 
                                <div class="form-group">
@@ -79,15 +87,15 @@
                                </div>
 
                                <div class="form-group">
-                                    <input type="phone" placeholder="Ваш телефон (*)">
+                                    <input type="phone" placeholder="Ваш телефон (*)" required>
                                </div>
 
                                <div class="form-group">
-                                     <input type="number" max="30000" min="0" step="100" placeholder="Желаемая сумма (*)">
+                                     <input type="number" max="30000" min="0" step="100" placeholder="Желаемая сумма (*)" required>
                                </div>
 
                                <div class="form-group">
-                                     <input class="input-comment" type="comment" placeholder=" Комментарий" >
+                                     <input class="input-comment" type="comment" placeholder=" Комментарий">
                                </div>
 
                                 <div class="form-group">
